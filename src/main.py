@@ -44,7 +44,10 @@ def main():
 
                 if status == 0.0:
 
-                    print("now progressing-- regression_type: ",regression_type," batch_size: ",batch_size," epochs: ",epochs)
+                    print("--now progressing--")
+                    print("regression_type: ", regression_type)
+                    print("batch_size: ", batch_size)
+                    print("epochs: ", epochs)
                     train( X_train, y_train, epochs, batch_size)
                     
                     if regression_type == "ExtraTreesRegressor":
@@ -71,5 +74,5 @@ def main():
     end_time = time.time() 
     execution_time = end_time - start_time
     
-    print( f"exex time : {execution_time}") 
+    print( f"execution time : {execution_time}") 
 main()

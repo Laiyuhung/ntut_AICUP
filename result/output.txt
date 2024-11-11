@@ -2,305 +2,359 @@ Regression Type: ExtraTreesRegressor
 Batch Size: 256
 Epochs: 50
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G4308984.14
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G4308984.14
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 256
 Epochs: 100
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3302785.0
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3302785.0
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 256
 Epochs: 150
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3263256.72
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3263256.72
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 256
 Epochs: 200
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G5826201.09
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G5826201.09
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 256
 Epochs: 250
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3947271.56
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3947271.56
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 256
 Epochs: 300
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3993595.8
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3993595.8
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 256
 Epochs: 350
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3538785.22
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3538785.22
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 256
 Epochs: 400
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3369265.67
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3369265.67
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 256
 Epochs: 450
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3399602.34
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3399602.34
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 128
 Epochs: 50
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3344487.98
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3344487.98
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 128
 Epochs: 100
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3260304.35
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3260304.35
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 128
 Epochs: 150
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3388339.8799999994
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3388339.8799999994
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 128
 Epochs: 200
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G6397628.27
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G6397628.27
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 128
 Epochs: 250
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3205423.9
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3205423.9
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 128
 Epochs: 300
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G11284244.06
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G11284244.06
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 128
 Epochs: 350
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G4010627.83
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G4010627.83
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 128
 Epochs: 400
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3299439.8
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3299439.8
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 128
 Epochs: 450
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3273661.0200000005
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3273661.0200000005
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 64
 Epochs: 50
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3262684.38
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3262684.38
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 64
 Epochs: 100
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3326744.9099999997
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3326744.9099999997
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 64
 Epochs: 150
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3395333.4699999997
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3395333.4699999997
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 64
 Epochs: 200
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G5554835.28
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G5554835.28
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 64
 Epochs: 250
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3676084.25
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3676084.25
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 64
 Epochs: 300
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3704454.0999999996
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3704454.0999999996
 
 Regression Type: ExtraTreesRegressor
 Batch Size: 64
 Epochs: 350
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G5006054.91
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G5006054.91
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 50
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3169221.09
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3169221.09
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 100
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3601611.95
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3601611.95
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 150
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G10883504.14
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G10883504.14
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 50
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3357966.42
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3357966.42
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 100
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G4777363.24
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G4777363.24
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 150
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3530993.4499999997
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3530993.4499999997
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 200
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G9029322.280000001
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G9029322.280000001
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 250
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G4175022.3499999996
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G4175022.3499999996
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 300
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G7788602.630000001
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G7788602.630000001
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 350
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3378900.6900000004
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3378900.6900000004
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 400
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3301497.84
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3301497.84
 
 Regression Type: KnnRegression
 Batch Size: 256
 Epochs: 450
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G10560715.099999998
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G10560715.099999998
 
 Regression Type: KnnRegression
 Batch Size: 128
 Epochs: 50
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3373929.26
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3373929.26
 
 Regression Type: KnnRegression
 Batch Size: 128
 Epochs: 100
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G6480500.77
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G6480500.77
 
 Regression Type: KnnRegression
 Batch Size: 128
 Epochs: 150
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G4851553.75
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G4851553.75
 
 Regression Type: KnnRegression
 Batch Size: 128
 Epochs: 200
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3926538.6499999994
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3926538.6499999994
 
 Regression Type: KnnRegression
 Batch Size: 128
 Epochs: 250
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3652284.36
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3652284.36
 
 Regression Type: KnnRegression
 Batch Size: 128
 Epochs: 300
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G5361942.5
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G5361942.5
 
 Regression Type: KnnRegression
 Batch Size: 128
 Epochs: 350
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3621042.7
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3621042.7
 
 Regression Type: Linear Regression
 Batch Size: 32
 Epochs: 100
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3621042.7
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3621042.7
 
 Regression Type: KnnRegression
 Batch Size: 64
 Epochs: 50
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3436782.28
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3436782.28
 
 Regression Type: KnnRegression
 Batch Size: 64
 Epochs: 100
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3372790.49
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3372790.49
 
 Regression Type: KnnRegression
 Batch Size: 64
 Epochs: 150
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3787298.9899999998
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3787298.9899999998
 
 Regression Type: KnnRegression
 Batch Size: 64
 Epochs: 200
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3499023.32
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3499023.32
 
 Regression Type: KnnRegression
 Batch Size: 64
 Epochs: 250
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3346020.7300000004
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3346020.7300000004
 
 Regression Type: KnnRegression
 Batch Size: 64
 Epochs: 300
 
-Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G6326933.24
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G6326933.24
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 50
+
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3198673.53
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 100
+
+ï¿½`ï¿½Xï¿½pï¿½tï¿½Zï¿½]ï¿½qï¿½Ä¤Gï¿½Cï¿½}ï¿½lï¿½^ï¿½G3340014.41
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 150
+
+Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3965035.0100000002
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 200
+
+Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G6852071.24
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 250
+
+Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3307722.09
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 300
+
+Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3236075.6700000004
+
+Regression Type: VotingRegressor
+Batch Size: 128
+Epochs: 50
+
+Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3250847.54
+
+Regression Type: VotingRegressor
+Batch Size: 128
+Epochs: 100
+
+Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3356916.75
+
+Regression Type: VotingRegressor
+Batch Size: 128
+Epochs: 150
+
+Á`¦X­p®t¶Z¡]±q²Ä¤G¦C¶}©l¡^¡G3614318.6799999997
 
