@@ -1,15 +1,36 @@
 import itertools
 import numpy as np
+from itertools import product
+
 
 def build_status(reg_type, batch_size_option, epoch_option):
 
-    cartesian = list(itertools.product(reg_type, batch_size_option, epoch_option))
+    loaded_array = np.load('./result/progress_status.npy')
+    
+    cartesian = np.array(list(product([reg_type], batch_size_option, epoch_option)))
     status = 0
-    cartesian_with_status = np.array([[item[0], item[1], item[2], status] for item in cartesian])
+    
+    # print(cartesian)
 
-    print(cartesian_with_status)
+    for item in cartesian:
+        cartesian_with_status = np.array([item[0], item[1], item[2], status])
+        cartesian_with_status = cartesian_with_status.reshape(1, -1)
+        print(cartesian_with_status)
+        loaded_array = np.append(loaded_array, cartesian_with_status, axis=0)
+    
 
-    np.save('./result/progress_status.npy', cartesian_with_status)
+    print(loaded_array)
+    # print(cartesian_with_status)
+
+    # loaded_array = np.append(loaded_array, cartesian_with_status, axis=0)
+    # print(loaded_array)
+    
+    # loaded_array = np.delete(loaded_array, np.arange(-6, 0), axis=0)
+
+    # print(loaded_array)
+
+
+    np.save('./result/progress_status.npy', loaded_array)
 
 
 def status_print():
@@ -17,7 +38,14 @@ def status_print():
     loaded_array = np.load('./result/progress_status.npy')
     print(loaded_array)
 
+    min_error = 10000000
+    
+    for item in loaded_array:
+        if float(item[3]) < min_error and float(item[3])!=0:
+            min_combination = item
+            min_error = float(item[3])
 
+    print("Best: ",min_combination)
 
 def manuel_modify_status():
 
@@ -29,7 +57,7 @@ def manuel_modify_status():
         # item[1]:Batch_size
         # item[2]:Epoch
         # item[3]:Status
-        if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "50":
+        if item[0] == "r" and item[1] == "128" and item[2] == "50":
             item[3] = 3373929.26
         if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "100":
             item[3] = 6480500.77

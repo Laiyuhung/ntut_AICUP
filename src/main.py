@@ -12,6 +12,9 @@ from ExtraTreesRegressor import *
 from forcast import *
 from forcast_match import *
 from status_control import *
+from RandomForestRegression import *
+from GradientBoostingRegression import *
+from SupportVectorRegression import *
 
 def main():
     start_time = time.time()
@@ -30,7 +33,7 @@ def main():
 
 
     
-    reg_type = ["ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear"]
+    reg_type = ["ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor"]
     batch_size_option = [256, 128, 64]
     epoch_option = [50, 100, 150, 200, 250, 300]
     
@@ -61,6 +64,15 @@ def main():
 
                     elif regression_type == "Linear":
                         regression_modal( NowDateTime , AllOutPut , Regression_X_train , Regression_y_train )
+                    
+                    elif regression_type == "RandomForestRegressor":
+                        random_forest_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                    elif regression_type == "GradientBoostingRegressor":
+                        gradient_boosting_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                    elif regression_type == "SupportVectorRegressor":
+                        support_vector_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
                     
                     forcast( AllOutPut = AllOutPut , lstm = 'WeatherTransformer.keras' , regression_model = f'./model/WeatherRegression_{NowDateTime}' )
                     total_difference = calculate(regression_type, batch_size, epochs)
