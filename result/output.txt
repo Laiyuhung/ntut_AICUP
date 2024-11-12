@@ -622,3 +622,21 @@ Epochs: 250
 
 總合計差距（從第二列開始）：3848479.12
 
+Regression Type: RandomForestRegressor
+Batch Size: 64
+Epochs: 300
+
+總合計差距（從第二列開始）：6402362.09
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：4127908.32
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3405420.88
+
