@@ -640,3 +640,111 @@ Epochs: 100
 
 總合計差距（從第二列開始）：3405420.88
 
+Regression Type: GradientBoostingRegressor
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3983313.3999999994
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：4380278.0200000005
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3352303.4499999997
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：3904854.4800000004
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：3538399.7899999996
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：3679488.73
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：3146643.0199999996
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 128
+Epochs: 200
+
+總合計差距（從第二列開始）：3243315.23
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：4436056.91
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：3683373.46
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 64
+Epochs: 50
+
+總合計差距（從第二列開始）：3422037.1199999996
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 64
+Epochs: 100
+
+總合計差距（從第二列開始）：3581503.3499999996
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 64
+Epochs: 150
+
+總合計差距（從第二列開始）：3208410.4599999995
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 64
+Epochs: 200
+
+總合計差距（從第二列開始）：4532793.5
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 64
+Epochs: 250
+
+總合計差距（從第二列開始）：8287931.85
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 64
+Epochs: 300
+
+總合計差距（從第二列開始）：4455629.37
+
+Regression Type: SupportVectorRegressor
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3331428.3400000003
+
+Regression Type: SupportVectorRegressor
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：9982086.709999999
+

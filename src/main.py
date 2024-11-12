@@ -17,6 +17,14 @@ from GradientBoostingRegression import *
 from SupportVectorRegression import *
 from GradientDescentRegression import *
 
+from XgboostRegression import *
+from CatboostRegression import *
+from LightgbmRegression import *
+from ElasticnetRegression import *
+from HuberRegression import *
+from LassoRegression import *
+from RidgeRegression import *
+
 def main():
     start_time = time.time()
     #adding_title( "./data/ExampleTrainData(AVG)" )
@@ -34,7 +42,7 @@ def main():
 
 
     
-    reg_type = ["ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "GradientDescentRegression"]
+    reg_type = ["ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "GradientDescentRegression", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
     batch_size_option = [256, 128, 64]
     epoch_option = [50, 100, 150, 200, 250, 300]
     
@@ -77,6 +85,28 @@ def main():
                     
                     elif regression_type == "GradientDescentRegression":
                         gradient_descent_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                    #new
+                    elif regression_type == "XGBoost":
+                        xgboost_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                    elif regression_type == "CatBoost":
+                        catboost_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                    elif regression_type == "LightGBM":
+                        lightgbm_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                    elif regression_type == "ElasticNet":
+                        elasticnet_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                    elif regression_type == "Huber":
+                        huber_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                    elif regression_type == "Lasso":
+                        lasso_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                    elif regression_type == "Ridge":
+                        ridge_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
 
                     forcast( AllOutPut = AllOutPut , lstm = 'WeatherTransformer.keras' , regression_model = f'./model/WeatherRegression_{NowDateTime}' )

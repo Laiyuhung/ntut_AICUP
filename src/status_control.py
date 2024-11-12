@@ -1,5 +1,6 @@
 import itertools
 import numpy as np
+import pandas as pd
 from itertools import product
 
 
@@ -94,3 +95,16 @@ def check_status(reg_type, batch_size, epoch):
     for item in loaded_array:
         if reg_type == item[0] and str(batch_size) == item[1] and str(epoch) == item[2]:
             return float(item[3])
+        
+
+
+
+def result_to_csv():
+    # Load the .npy file
+    data = np.load('./result/progress_status.npy')  # Replace with your .npy file path
+
+    # Convert to a DataFrame
+    df = pd.DataFrame(data)
+
+    # Save as .csv file
+    df.to_csv('./result/progress_status.csv', index=False)  # Replace with desired .csv file name
