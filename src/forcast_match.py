@@ -28,7 +28,8 @@ def calculate(regression_type, batch_size, epochs):
             # 寫入總合計差距
             f.write(f"總合計差距（從第二列開始）：{total_difference}\n\n")
 
-        print("總合計差距已追加到 output.txt")
+        print("總合計差距 : ",total_difference)
+        print()
 
         return total_difference
 

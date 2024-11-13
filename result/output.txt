@@ -748,3 +748,81 @@ Epochs: 100
 
 總合計差距（從第二列開始）：9982086.709999999
 
+Regression Type: SupportVectorRegressor
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3840776.99
+
+Regression Type: SupportVectorRegressor
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：3918122.1500000004
+
+Regression Type: SupportVectorRegressor
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3799567.14
+
+Regression Type: SupportVectorRegressor
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：5788237.07
+
+Regression Type: SupportVectorRegressor
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：3311837.6100000003
+
+Regression Type: SupportVectorRegressor
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：3532108.95
+
+Regression Type: SupportVectorRegressor
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：3894236.64
+
+Regression Type: SupportVectorRegressor
+Batch Size: 128
+Epochs: 200
+
+總合計差距（從第二列開始）：3467400.68
+
+Regression Type: SupportVectorRegressor
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：3281081.0600000005
+
+Regression Type: SupportVectorRegressor
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：7279321.369999999
+
+Regression Type: SupportVectorRegressor
+Batch Size: 64
+Epochs: 50
+
+總合計差距（從第二列開始）：3183490.17
+
+Regression Type: SupportVectorRegressor
+Batch Size: 64
+Epochs: 100
+
+總合計差距（從第二列開始）：3250387.5
+
+Regression Type: SupportVectorRegressor
+Batch Size: 64
+Epochs: 150
+
+總合計差距（從第二列開始）：9342327.08
+

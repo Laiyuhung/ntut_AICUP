@@ -32,6 +32,7 @@ def build_status(reg_type, batch_size_option, epoch_option):
 
 
     np.save('./result/progress_status.npy', loaded_array)
+    result_to_csv()
 
 
 def status_print():
@@ -73,6 +74,7 @@ def manuel_modify_status():
             
     
     np.save('./result/progress_status.npy', loaded_array)
+    result_to_csv()
 
 
 def modify_status(reg_type, batch_size_option, epoch_option, status):
@@ -86,6 +88,7 @@ def modify_status(reg_type, batch_size_option, epoch_option, status):
             break
 
     np.save('./result/progress_status.npy', loaded_array)
+    result_to_csv()
 
 
 def check_status(reg_type, batch_size, epoch):
