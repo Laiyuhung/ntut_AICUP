@@ -826,3 +826,309 @@ Epochs: 150
 
 總合計差距（從第二列開始）：9342327.08
 
+Regression Type: SupportVectorRegressor
+Batch Size: 64
+Epochs: 200
+
+總合計差距（從第二列開始）：3306574.87
+
+Regression Type: SupportVectorRegressor
+Batch Size: 64
+Epochs: 250
+
+總合計差距（從第二列開始）：4106849.1900000004
+
+Regression Type: SupportVectorRegressor
+Batch Size: 64
+Epochs: 300
+
+總合計差距（從第二列開始）：3498289.6799999997
+
+Regression Type: XGBoost
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3346409.13
+
+Regression Type: XGBoost
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3819922.31
+
+Regression Type: XGBoost
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3510757.6799999997
+
+Regression Type: XGBoost
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：3292437.31
+
+Regression Type: XGBoost
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3550368.16
+
+Regression Type: XGBoost
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：3390727.11
+
+Regression Type: XGBoost
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：5003459.6899999995
+
+Regression Type: XGBoost
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：3274471.9400000004
+
+Regression Type: XGBoost
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：3233205.76
+
+Regression Type: XGBoost
+Batch Size: 128
+Epochs: 200
+
+總合計差距（從第二列開始）：3329887.0799999996
+
+Regression Type: XGBoost
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：4434877.5600000005
+
+Regression Type: XGBoost
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：3702791.49
+
+Regression Type: XGBoost
+Batch Size: 64
+Epochs: 50
+
+總合計差距（從第二列開始）：3181355.83
+
+Regression Type: XGBoost
+Batch Size: 64
+Epochs: 100
+
+總合計差距（從第二列開始）：3800878.76
+
+Regression Type: XGBoost
+Batch Size: 64
+Epochs: 150
+
+總合計差距（從第二列開始）：4506744.52
+
+Regression Type: XGBoost
+Batch Size: 64
+Epochs: 200
+
+總合計差距（從第二列開始）：3545006.24
+
+Regression Type: XGBoost
+Batch Size: 64
+Epochs: 250
+
+總合計差距（從第二列開始）：3462034.23
+
+Regression Type: XGBoost
+Batch Size: 64
+Epochs: 300
+
+總合計差距（從第二列開始）：4121184.54
+
+Regression Type: CatBoost
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3386388.1000000006
+
+Regression Type: CatBoost
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3291155.2599999993
+
+Regression Type: CatBoost
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3359015.9
+
+Regression Type: CatBoost
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：3530634.16
+
+Regression Type: CatBoost
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3577173.05
+
+Regression Type: CatBoost
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：3345391.7600000002
+
+Regression Type: CatBoost
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：3532483.28
+
+Regression Type: CatBoost
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：5438347.670000001
+
+Regression Type: CatBoost
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：3197099.61
+
+Regression Type: CatBoost
+Batch Size: 128
+Epochs: 200
+
+總合計差距（從第二列開始）：3837261.1599999997
+
+Regression Type: CatBoost
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：4257349.79
+
+Regression Type: CatBoost
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：3597773.22
+
+Regression Type: CatBoost
+Batch Size: 64
+Epochs: 50
+
+總合計差距（從第二列開始）：3542953.94
+
+Regression Type: CatBoost
+Batch Size: 64
+Epochs: 100
+
+總合計差距（從第二列開始）：3973871.7400000007
+
+Regression Type: CatBoost
+Batch Size: 64
+Epochs: 150
+
+總合計差距（從第二列開始）：3904218.8
+
+Regression Type: CatBoost
+Batch Size: 64
+Epochs: 200
+
+總合計差距（從第二列開始）：3708603.64
+
+Regression Type: CatBoost
+Batch Size: 64
+Epochs: 250
+
+總合計差距（從第二列開始）：3590625.3200000003
+
+Regression Type: CatBoost
+Batch Size: 64
+Epochs: 300
+
+總合計差距（從第二列開始）：3405165.1100000003
+
+Regression Type: LightGBM
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3563853.42
+
+Regression Type: LightGBM
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：5975484.74
+
+Regression Type: LightGBM
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3629310.3199999994
+
+Regression Type: LightGBM
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：3851113.5
+
+Regression Type: LightGBM
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3972848.22
+
+Regression Type: LightGBM
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：6595103.600000001
+
+Regression Type: LightGBM
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：4446052.95
+
+Regression Type: LightGBM
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：3282193.04
+
+Regression Type: LightGBM
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：3225337.12
+
+Regression Type: LightGBM
+Batch Size: 128
+Epochs: 200
+
+總合計差距（從第二列開始）：3777540.33
+
+Regression Type: LightGBM
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：3378077.8
+
+Regression Type: LightGBM
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：5631034.960000001
+

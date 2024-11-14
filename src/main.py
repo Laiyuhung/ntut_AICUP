@@ -54,7 +54,7 @@ def main():
                 status = check_status(regression_type, batch_size, epochs)
                 # print(status)
 
-                if status == 0.0:
+                if status == 0.0 and regression_type != "GradientDescentRegression":
 
                     print("--now progressing--")
                     print("regression_type: ", regression_type)
@@ -83,8 +83,7 @@ def main():
                     elif regression_type == "SupportVectorRegressor":
                         support_vector_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
                     
-                    elif regression_type == "GradientDescentRegression":
-                        gradient_descent_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                    
 
                     #new
                     elif regression_type == "XGBoost":
@@ -107,6 +106,9 @@ def main():
 
                     elif regression_type == "Ridge":
                         ridge_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                    elif regression_type == "GradientDescentRegression":
+                        gradient_descent_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
 
                     forcast( AllOutPut = AllOutPut , lstm = 'WeatherTransformer.keras' , regression_model = f'./model/WeatherRegression_{NowDateTime}' )
