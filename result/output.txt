@@ -1132,3 +1132,243 @@ Epochs: 300
 
 總合計差距（從第二列開始）：5631034.960000001
 
+Regression Type: LightGBM
+Batch Size: 64
+Epochs: 50
+
+總合計差距（從第二列開始）：3198991.9999999995
+
+Regression Type: LightGBM
+Batch Size: 64
+Epochs: 100
+
+總合計差距（從第二列開始）：3549536.44
+
+Regression Type: LightGBM
+Batch Size: 64
+Epochs: 150
+
+總合計差距（從第二列開始）：5764171.550000001
+
+Regression Type: LightGBM
+Batch Size: 64
+Epochs: 200
+
+總合計差距（從第二列開始）：3490426.3800000004
+
+Regression Type: LightGBM
+Batch Size: 64
+Epochs: 250
+
+總合計差距（從第二列開始）：4514101.16
+
+Regression Type: LightGBM
+Batch Size: 64
+Epochs: 300
+
+總合計差距（從第二列開始）：3877053.96
+
+Regression Type: ElasticNet
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3171520.08
+
+Regression Type: ElasticNet
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3226373.87
+
+Regression Type: ElasticNet
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3413946.1199999996
+
+Regression Type: ElasticNet
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：3407345.58
+
+Regression Type: ElasticNet
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3384942.37
+
+Regression Type: ElasticNet
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：6049396.4
+
+Regression Type: ElasticNet
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：3437981.5599999996
+
+Regression Type: ElasticNet
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：3229005.94
+
+Regression Type: ElasticNet
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：10268217.629999999
+
+Regression Type: ElasticNet
+Batch Size: 128
+Epochs: 200
+
+總合計差距（從第二列開始）：4802266.9399999995
+
+Regression Type: ElasticNet
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：3670980.5300000003
+
+Regression Type: ElasticNet
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：4124748.5200000005
+
+Regression Type: ElasticNet
+Batch Size: 64
+Epochs: 50
+
+總合計差距（從第二列開始）：3934976.4699999997
+
+Regression Type: ElasticNet
+Batch Size: 64
+Epochs: 100
+
+總合計差距（從第二列開始）：6425797.010000001
+
+Regression Type: ElasticNet
+Batch Size: 64
+Epochs: 150
+
+總合計差距（從第二列開始）：4472602.72
+
+Regression Type: ElasticNet
+Batch Size: 64
+Epochs: 200
+
+總合計差距（從第二列開始）：5245618.29
+
+Regression Type: ElasticNet
+Batch Size: 64
+Epochs: 250
+
+總合計差距（從第二列開始）：3334046.13
+
+Regression Type: ElasticNet
+Batch Size: 64
+Epochs: 300
+
+總合計差距（從第二列開始）：3335431.17
+
+Regression Type: Huber
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3487431.9499999997
+
+Regression Type: Huber
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3650835.9999999995
+
+Regression Type: Huber
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：4069079.23
+
+Regression Type: Huber
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：4130140.25
+
+Regression Type: Huber
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3299627.52
+
+Regression Type: Huber
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：3973138.84
+
+Regression Type: Huber
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：4151229.88
+
+Regression Type: Huber
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：4053016.72
+
+Regression Type: Huber
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：3326192.9699999997
+
+Regression Type: Huber
+Batch Size: 128
+Epochs: 200
+
+總合計差距（從第二列開始）：6830646.43
+
+Regression Type: Huber
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：4761099.61
+
+Regression Type: Huber
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：4684138.6899999995
+
+Regression Type: Huber
+Batch Size: 64
+Epochs: 50
+
+總合計差距（從第二列開始）：3258229.26
+
+Regression Type: Huber
+Batch Size: 64
+Epochs: 100
+
+總合計差距（從第二列開始）：3916604.9
+
+Regression Type: Huber
+Batch Size: 64
+Epochs: 150
+
+總合計差距（從第二列開始）：3329539.96
+
+Regression Type: Huber
+Batch Size: 64
+Epochs: 200
+
+總合計差距（從第二列開始）：3385795.61
+
