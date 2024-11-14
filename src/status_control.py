@@ -4,23 +4,31 @@ import pandas as pd
 from itertools import product
 
 
-def build_status(reg_type, batch_size_option, epoch_option):
+def build_status(seq_model_type, reg_type, batch_size_option, epoch_option):
 
     loaded_array = np.load('./result/progress_status.npy')
     
-    cartesian = np.array(list(product([reg_type], batch_size_option, epoch_option)))
-    status = 0
-    
-    # print(cartesian)
+    # cartesian = np.array(list(product([seq_model_type],[reg_type], batch_size_option, epoch_option)))
+    # status = 0
 
-    for item in cartesian:
-        cartesian_with_status = np.array([item[0], item[1], item[2], status])
-        cartesian_with_status = cartesian_with_status.reshape(1, -1)
-        print(cartesian_with_status)
-        loaded_array = np.append(loaded_array, cartesian_with_status, axis=0)
+    new_array = []
+
+    for item in loaded_array:
+        # 將插入後的結果加入新陣列
+        new_item = np.insert(item, 0, seq_model_type)
+        new_array.append(new_item)
+
+    new_array = np.array(new_array)
+    print(new_array)
+
+    # for item in cartesian:
+    #     cartesian_with_status = np.array([seq_model_type, item[0], item[1], item[2], status])
+    #     cartesian_with_status = cartesian_with_status.reshape(1, -1)
+    #     print(cartesian_with_status)
+    #     loaded_array = np.append(loaded_array, cartesian_with_status, axis=0)
     
 
-    print(loaded_array)
+    # print(loaded_array)
     # print(cartesian_with_status)
 
     # loaded_array = np.append(loaded_array, cartesian_with_status, axis=0)
@@ -31,8 +39,8 @@ def build_status(reg_type, batch_size_option, epoch_option):
     # print(loaded_array)
 
 
-    np.save('./result/progress_status.npy', loaded_array)
-    result_to_csv()
+    # np.save('./result/progress_status.npy', loaded_array)
+    # result_to_csv()
 
 
 def status_print():
@@ -53,24 +61,24 @@ def manuel_modify_status():
 
     loaded_array = np.load('./result/progress_status.npy')
 
-    for item in loaded_array:
-        # 想要手動更新時在這邊動作
-        # item[0]:Model,
-        # item[1]:Batch_size
-        # item[2]:Epoch
-        # item[3]:Status
-        if item[0] == "r" and item[1] == "128" and item[2] == "50":
-            item[3] = 3373929.26
-        if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "100":
-            item[3] = 6480500.77
-        if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "150":
-            item[3] = 4851553.75
-        if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "200":
-            item[3] = 3926538.65
-        if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "250":
-            item[3] = 3652284.36
-        if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "300":
-            item[3] = 5361942.5
+    # for item in loaded_array:
+    #     # 想要手動更新時在這邊動作
+    #     # item[0]:Model,
+    #     # item[1]:Batch_size
+    #     # item[2]:Epoch
+    #     # item[3]:Status
+    #     if item[0] == "r" and item[1] == "128" and item[2] == "50":
+    #         item[3] = 3373929.26
+    #     if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "100":
+    #         item[3] = 6480500.77
+    #     if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "150":
+    #         item[3] = 4851553.75
+    #     if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "200":
+    #         item[3] = 3926538.65
+    #     if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "250":
+    #         item[3] = 3652284.36
+    #     if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "300":
+    #         item[3] = 5361942.5
             
     
     np.save('./result/progress_status.npy', loaded_array)

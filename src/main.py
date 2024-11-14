@@ -46,7 +46,6 @@ def main():
     batch_size_option = [256, 128, 64]
     epoch_option = [50, 100, 150, 200, 250, 300]
     
-    # print("aaa")
     for regression_type in reg_type:
         for batch_size in batch_size_option:
             for epochs in epoch_option:
