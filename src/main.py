@@ -3,8 +3,15 @@ import time
 
 from loading_data import *
 from normalize import *
+
+
 from tranformation_model import *
-# from LSTM_model import *
+from LSTM_model import *
+from gru_model import *
+from simple_rnn_model import *
+from bidirectional_LSTM import *
+
+
 from regression import *
 from VotingRegressor import *
 from KnnRegression import *
@@ -16,7 +23,6 @@ from RandomForestRegression import *
 from GradientBoostingRegression import *
 from SupportVectorRegression import *
 from GradientDescentRegression import *
-
 from XgboostRegression import *
 from CatboostRegression import *
 from LightgbmRegression import *
@@ -36,85 +42,114 @@ def main():
     X_train , y_train , LSTM_MinMaxModel = normal( AllOutPut , 12 )
     # X_train = reshape( x_train )
 
-    regressor = transformer_model((X_train.shape[1], X_train.shape[2]))
+    
+    
+    
+        
+    
     
     NowDateTime = datetime.now().strftime("%Y-%m")
 
 
-    
+    seq_type = ["Transformer", "LSTM", "GRU", "Simple RNN", "Bidirectional LSTM"]
     reg_type = ["ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "GradientDescentRegression", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
     batch_size_option = [256, 128, 64]
     epoch_option = [50, 100, 150, 200, 250, 300]
     
-    for regression_type in reg_type:
-        for batch_size in batch_size_option:
-            for epochs in epoch_option:
-                
-                status = check_status(regression_type, batch_size, epochs)
-                # print(status)
 
-                if status == 0.0 and regression_type != "GradientDescentRegression":
+    for sequential_type in seq_type:
 
-                    print("--now progressing--")
-                    print("regression_type: ", regression_type)
-                    print("batch_size: ", batch_size)
-                    print("epochs: ", epochs)
-                    train( X_train, y_train, epochs, batch_size)
+        # if sequential_type == "Transformer":
+        #     regressor = transformer_model((X_train.shape[1], X_train.shape[2]))
+        #     now_seq = "Transformer"
+
+        # elif sequential_type == "LSTM":
+        #     regressor = deep_lstm_model((X_train.shape[1], X_train.shape[2]))
+        #     now_seq = "LSTM"
+        
+        if sequential_type == "GRU":
+            regressor = gru_model((X_train.shape[1], X_train.shape[2]))
+            # now_seq = "GRU"
+        
+        elif sequential_type == "Simple RNN":
+            regressor = simple_rnn_model((X_train.shape[1], X_train.shape[2]))
+            # now_seq = "Simple RNN"
+
+        elif sequential_type == "Bidirectional LSTM":
+            regressor = bidirectional_lstm_model((X_train.shape[1], X_train.shape[2]))
+            # now_seq = "Bidirectional LSTM"
+
+        # print(now_seq)
+        for regression_type in reg_type:
+            for batch_size in batch_size_option:
+                for epochs in epoch_option:
                     
-                    if regression_type == "ExtraTreesRegressor":
-                        ExtraTree_regression_modal( NowDateTime , AllOutPut , Regression_X_train , Regression_y_train )
+                    status = check_status(sequential_type, regression_type, batch_size, epochs)
+                    # print(status)
 
-                    elif regression_type == "KnnRegression":
-                        knn_regression_modal( NowDateTime , LSTM_MinMaxModel, AllOutPut , Regression_X_train , Regression_y_train )
-                    
-                    elif regression_type == "VotingRegressor":
-                        voting_regression_modal( NowDateTime , AllOutPut , Regression_X_train , Regression_y_train )
+                    if status == 0.0 and regression_type != "GradientDescentRegression" and sequential_type == "GRU":
 
-                    elif regression_type == "Linear":
-                        regression_modal( NowDateTime , AllOutPut , Regression_X_train , Regression_y_train )
-                    
-                    elif regression_type == "RandomForestRegressor":
-                        random_forest_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                        print("--now progressing--")
+                        print("sequencial_model_type: ", sequential_type)
+                        print("regression_type: ", regression_type)
+                        print("batch_size: ", batch_size)
+                        print("epochs: ", epochs)
+                        train( X_train, y_train, epochs, batch_size)
+                        
+                        if regression_type == "ExtraTreesRegressor":
+                            ExtraTree_regression_modal( NowDateTime , AllOutPut , Regression_X_train , Regression_y_train )
 
-                    elif regression_type == "GradientBoostingRegressor":
-                        gradient_boosting_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                        elif regression_type == "KnnRegression":
+                            knn_regression_modal( NowDateTime , LSTM_MinMaxModel, AllOutPut , Regression_X_train , Regression_y_train )
+                        
+                        elif regression_type == "VotingRegressor":
+                            voting_regression_modal( NowDateTime , AllOutPut , Regression_X_train , Regression_y_train )
 
-                    elif regression_type == "SupportVectorRegressor":
-                        support_vector_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
-                    
-                    
+                        elif regression_type == "Linear":
+                            regression_modal( NowDateTime , AllOutPut , Regression_X_train , Regression_y_train )
+                        
+                        elif regression_type == "RandomForestRegressor":
+                            random_forest_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
-                    #new
-                    elif regression_type == "XGBoost":
-                        xgboost_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                        elif regression_type == "GradientBoostingRegressor":
+                            gradient_boosting_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
-                    elif regression_type == "CatBoost":
-                        catboost_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                        elif regression_type == "SupportVectorRegressor":
+                            support_vector_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                        
+                        
 
-                    elif regression_type == "LightGBM":
-                        lightgbm_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                        #new
+                        elif regression_type == "XGBoost":
+                            xgboost_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
-                    elif regression_type == "ElasticNet":
-                        elasticnet_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                        elif regression_type == "CatBoost":
+                            catboost_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
-                    elif regression_type == "Huber":
-                        huber_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                        elif regression_type == "LightGBM":
+                            lightgbm_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
-                    elif regression_type == "Lasso":
-                        lasso_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                        elif regression_type == "ElasticNet":
+                            elasticnet_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
-                    elif regression_type == "Ridge":
-                        ridge_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                        elif regression_type == "Huber":
+                            huber_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
-                    elif regression_type == "GradientDescentRegression":
-                        gradient_descent_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+                        elif regression_type == "Lasso":
+                            lasso_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                        elif regression_type == "Ridge":
+                            ridge_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                        elif regression_type == "GradientDescentRegression":
+                            gradient_descent_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
 
-                    forcast( AllOutPut = AllOutPut , lstm = 'WeatherTransformer.keras' , regression_model = f'./model/WeatherRegression_{NowDateTime}' )
-                    total_difference = calculate(regression_type, batch_size, epochs)
+                        forcast( AllOutPut = AllOutPut , lstm = 'WeatherTransformer.keras' , regression_model = f'./model/WeatherRegression_{NowDateTime}' )
+                        total_difference = calculate(sequential_type, regression_type, batch_size, epochs)
 
-                    modify_status(regression_type, batch_size, epochs, total_difference)
-                    status_print()
+                        modify_status(sequential_type, regression_type, batch_size, epochs, total_difference)
+                        status_print()
 
 
 

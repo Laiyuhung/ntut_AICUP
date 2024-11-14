@@ -1,6 +1,6 @@
 import pandas as pd
 
-def calculate(regression_type, batch_size, epochs):
+def calculate(sequential_type, regression_type, batch_size, epochs):
     # 讀取兩個 CSV 文件，忽略第一行
     df1 = pd.read_csv('./result/upload.csv', skiprows=1)
     df2 = pd.read_csv('./result/output.csv', skiprows=1)

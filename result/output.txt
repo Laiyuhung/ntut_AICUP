@@ -1378,3 +1378,9 @@ Epochs: 250
 
 總合計差距（從第二列開始）：3628327.4200000004
 
+Regression Type: ExtraTreesRegressor
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3305834.87
+

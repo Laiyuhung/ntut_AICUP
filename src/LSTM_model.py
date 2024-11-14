@@ -1,29 +1,25 @@
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import LSTM
-from tensorflow.keras.layers import Dropout
-from tensorflow.keras.models import load_model
+from tensorflow.keras.layers import LSTM, Dense, Dropout
 
-def create_lstm_model( X_train ):
-    regressor = Sequential ()
+def deep_lstm_model(input_shape):
+    model = Sequential()
     
-    regressor.add(LSTM(units = 128, return_sequences = True, input_shape = (X_train.shape[1], 2)))
-    regressor.add(LSTM(units =  64))
-    regressor.add(Dropout(0.2))
-    
-    return regressor
+    # 第一層 LSTM
+    model.add(LSTM(units=128, return_sequences=True, input_shape=input_shape))
+    model.add(Dropout(0.2))  # 加入 Dropout 層來避免過擬合
 
-def output_layer_setting( regressor ):
-    regressor.add(Dense(units = 2))
-    regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
-    return regressor
+    # 第二層 LSTM
+    model.add(LSTM(units=64, return_sequences=True))
+    model.add(Dropout(0.2))
 
-def train( X_train , y_train , NowDateTime , epochs , batch_size):
-    regressor = create_lstm_model( X_train )
-    regressor = output_layer_setting( regressor )
-    regressor.fit(X_train, y_train, epochs = epochs, batch_size = batch_size)
-    
-    from datetime import datetime
-    regressor.save('./model/WheatherLSTM_' + NowDateTime+'.h5')
-    print('Model Saved')
+    # 第三層 LSTM
+    model.add(LSTM(units=32))
+    model.add(Dropout(0.2))
 
+    # 最後的回歸層
+    model.add(Dense(units=1))  # 假設是回歸任務，輸出層單位數設為 1
+
+    # 編譯模型
+    model.compile(optimizer='adam', loss='mse')  # 使用均方誤差（MSE）作為損失函數
+
+    return model
