@@ -1,35 +1,38 @@
 from datetime import datetime
 import time
+import sys
+
 
 from loading_data import *
 from normalize import *
-
-
-from tranformation_model import *
-from LSTM_model import *
-from gru_model import *
-from simple_rnn_model import *
-from bidirectional_LSTM import *
-
-
-from regression import *
-from VotingRegressor import *
-from KnnRegression import *
-from ExtraTreesRegressor import *
 from forcast import *
 from forcast_match import *
 from status_control import *
-from RandomForestRegression import *
-from GradientBoostingRegression import *
-from SupportVectorRegression import *
-from GradientDescentRegression import *
-from XgboostRegression import *
-from CatboostRegression import *
-from LightgbmRegression import *
-from ElasticnetRegression import *
-from HuberRegression import *
-from LassoRegression import *
-from RidgeRegression import *
+
+sys.path.append('/sequence_models/')
+from sequence_models.tranformation_model import *
+from sequence_models.LSTM_model import *
+from sequence_models.gru_model import *
+from sequence_models.simple_rnn_model import *
+from sequence_models.bidirectional_LSTM import *
+
+
+sys.path.append('/regression_models/')
+from regression import *
+from regression_models.VotingRegressor import *
+from regression_models.KnnRegression import *
+from regression_models.ExtraTreesRegressor import *
+from regression_models.RandomForestRegression import *
+from regression_models.GradientBoostingRegression import *
+from regression_models.SupportVectorRegression import *
+from regression_models.GradientDescentRegression import *
+from regression_models.XgboostRegression import *
+from regression_models.CatboostRegression import *
+from regression_models.LightgbmRegression import *
+from regression_models.ElasticnetRegression import *
+from regression_models.HuberRegression import *
+from regression_models.LassoRegression import *
+from regression_models.RidgeRegression import *
 
 def main():
     start_time = time.time()
