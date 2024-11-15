@@ -8,5 +8,4 @@ epoch_option = [50, 100, 150, 200, 250, 300]
 # manuel_modify_status()
 status_print()
 # result_to_csv()
-# a=check_status("VotingRegressor", 256, 50)
-# print(type(a))
+# merge_npy()

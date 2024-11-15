@@ -1552,3 +1552,51 @@ Epochs: 250
 
 總合計差距（從第二列開始）：5021476.359999999
 
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3211609.0599999996
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3356465.83
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3245591.87
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：3332704.78
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3259233.5999999996
+
+Regression Type: VotingRegressor
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：3560503.25
+
+Regression Type: VotingRegressor
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：3692386.4499999997
+
+Regression Type: VotingRegressor
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：3470188.3499999996
+

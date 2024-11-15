@@ -110,6 +110,17 @@ def check_status(seq_type,reg_type, batch_size, epoch):
             return float(item[4])
         
 
+def merge_npy():
+    loaded1 = np.load('./result/progress_status.npy')
+    loaded2 = np.load('./result/progress_status_outer.npy')
+
+    for item1 in loaded1:
+            for item2 in loaded2:
+               if item1[4] == '0' and item2[4] != '0': 
+                   item1[4] == item2[4]
+
+    # np.save('./result/progress_status.npy', loaded1)
+    # result_to_csv()            
 
 
 def result_to_csv():
