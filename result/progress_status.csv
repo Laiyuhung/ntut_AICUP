@@ -564,10 +564,10 @@ GRU,KnnRegression,256,200,6926854.82
 GRU,KnnRegression,256,250,3525538.13
 GRU,KnnRegression,256,300,6947914.0
 GRU,KnnRegression,128,50,3857714.92
-GRU,KnnRegression,128,100,0
-GRU,KnnRegression,128,150,0
-GRU,KnnRegression,128,200,0
-GRU,KnnRegression,128,250,0
+GRU,KnnRegression,128,100,3379102.5
+GRU,KnnRegression,128,150,3816219.71
+GRU,KnnRegression,128,200,11258202.209999999
+GRU,KnnRegression,128,250,5021476.359999999
 GRU,KnnRegression,128,300,0
 GRU,KnnRegression,64,50,0
 GRU,KnnRegression,64,100,0

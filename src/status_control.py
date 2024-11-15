@@ -50,9 +50,9 @@ def status_print():
     min_error = 10000000
     
     for item in loaded_array:
-        if float(item[3]) < min_error and float(item[3])!=0:
+        if float(item[4]) < min_error and float(item[4])!=0:
             min_combination = item
-            min_error = float(item[3])
+            min_error = float(item[4])
 
     print("Best: ",min_combination)
 

@@ -51,10 +51,10 @@ def main():
     NowDateTime = datetime.now().strftime("%Y-%m")
 
     #orgiginal
-    seq_type = ["Transformer", "LSTM", "GRU", "Simple RNN", "Bidirectional LSTM"]
-    reg_type = ["ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "GradientDescentRegression", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
-    batch_size_option = [256, 128, 64]
-    epoch_option = [50, 100, 150, 200, 250, 300]
+    # seq_type = ["Transformer", "LSTM", "GRU", "Simple RNN", "Bidirectional LSTM"]
+    # reg_type = ["ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "GradientDescentRegression", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
+    # batch_size_option = [256, 128, 64]
+    # epoch_option = [50, 100, 150, 200, 250, 300]
 
     #hopes
     seq_type = ["GRU", "LSTM", "Simple RNN", "LSTM", "Transformer"]
@@ -93,7 +93,7 @@ def main():
                     status = check_status(sequential_type, regression_type, batch_size, epochs)
                     # print(status)
 
-                    if status == 0.0 and regression_type != "GradientDescentRegression" and sequential_type == "GRU":
+                    if status == 0.0 :
 
                         print("--now progressing--")
                         print("sequencial_model_type: ", sequential_type)

@@ -1528,3 +1528,27 @@ Epochs: 50
 
 總合計差距（從第二列開始）：3857714.92
 
+Regression Type: KnnRegression
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：3379102.5
+
+Regression Type: KnnRegression
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：3816219.71
+
+Regression Type: KnnRegression
+Batch Size: 128
+Epochs: 200
+
+總合計差距（從第二列開始）：11258202.209999999
+
+Regression Type: KnnRegression
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：5021476.359999999
+
