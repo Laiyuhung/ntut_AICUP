@@ -1384,3 +1384,147 @@ Epochs: 50
 
 總合計差距（從第二列開始）：3305834.87
 
+Regression Type: ExtraTreesRegressor
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3383921.05
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3440336.97
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：3868371.5300000003
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3482176.23
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：3545704.1500000004
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：3670449.45
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：3600642.45
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：3345819.02
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 128
+Epochs: 200
+
+總合計差距（從第二列開始）：3290356.37
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：3330632.15
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：10506243.100000001
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 64
+Epochs: 50
+
+總合計差距（從第二列開始）：3470761.65
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 64
+Epochs: 100
+
+總合計差距（從第二列開始）：3736852.3499999996
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 64
+Epochs: 150
+
+總合計差距（從第二列開始）：3237096.9500000007
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 64
+Epochs: 200
+
+總合計差距（從第二列開始）：3367266.1
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 64
+Epochs: 250
+
+總合計差距（從第二列開始）：3238894.26
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 64
+Epochs: 300
+
+總合計差距（從第二列開始）：4488261.25
+
+Regression Type: KnnRegression
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3217376.4000000004
+
+Regression Type: KnnRegression
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3461096.52
+
+Regression Type: KnnRegression
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：6175667.72
+
+Regression Type: KnnRegression
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：6926854.82
+
+Regression Type: KnnRegression
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3525538.13
+
+Regression Type: KnnRegression
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：6947914.0
+
+Regression Type: KnnRegression
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：3857714.92
+
