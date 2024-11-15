@@ -50,22 +50,28 @@ def main():
     
     NowDateTime = datetime.now().strftime("%Y-%m")
 
-
+    #orgiginal
     seq_type = ["Transformer", "LSTM", "GRU", "Simple RNN", "Bidirectional LSTM"]
     reg_type = ["ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "GradientDescentRegression", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
     batch_size_option = [256, 128, 64]
     epoch_option = [50, 100, 150, 200, 250, 300]
+
+    #hopes
+    seq_type = ["GRU", "LSTM", "Simple RNN", "LSTM", "Transformer"]
+    reg_type = ["ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
+    batch_size_option = [256, 128]
+    epoch_option = [50, 100, 150, 200, 250]
     
 
     for sequential_type in seq_type:
 
-        # if sequential_type == "Transformer":
-        #     regressor = transformer_model((X_train.shape[1], X_train.shape[2]))
-        #     now_seq = "Transformer"
+        if sequential_type == "Transformer":
+            regressor = transformer_model((X_train.shape[1], X_train.shape[2]))
+            now_seq = "Transformer"
 
-        # elif sequential_type == "LSTM":
-        #     regressor = deep_lstm_model((X_train.shape[1], X_train.shape[2]))
-        #     now_seq = "LSTM"
+        elif sequential_type == "LSTM":
+            regressor = deep_lstm_model((X_train.shape[1], X_train.shape[2]))
+            now_seq = "LSTM"
         
         if sequential_type == "GRU":
             regressor = gru_model((X_train.shape[1], X_train.shape[2]))
