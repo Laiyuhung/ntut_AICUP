@@ -60,30 +60,13 @@ def manuel_modify_status():
 
     loaded_array = np.load('./result/progress_status.npy')
 
-    for item in loaded_array:
-    #     # 想要手動更新時在這邊動作
-    #     # item[0]:Model,
-    #     # item[1]:Batch_size
-    #     # item[2]:Epoch
-    #     # item[3]:Status
-    #     if item[0] == "r" and item[1] == "128" and item[2] == "50":
-    #         item[3] = 3373929.26
-    #     if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "100":
-    #         item[3] = 6480500.77
-    #     if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "150":
-    #         item[3] = 4851553.75
-    #     if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "200":
-    #         item[3] = 3926538.65
-    #     if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "250":
-    #         item[3] = 3652284.36
-    #     if item[0] == "KnnRegression" and item[1] == "128" and item[2] == "300":
-    #         item[3] = 5361942.5
-            
-        if item[0] == "LSTM":
-            item[0] = "Transformer"
+    filtered_data = loaded_array[loaded_array[:, 1] != "GradientDescentRegression"]
 
-    print(loaded_array)
-    # np.save('./result/progress_status.npy', loaded_array)
+    print(filtered_data)
+            
+
+    # print(loaded_array)
+    # np.save('./result/progress_status.npy', filtered_data)
     # result_to_csv()
 
 

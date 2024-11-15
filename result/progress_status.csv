@@ -125,24 +125,6 @@ Transformer,SupportVectorRegressor,64,150,9342327.08
 Transformer,SupportVectorRegressor,64,200,3306574.87
 Transformer,SupportVectorRegressor,64,250,4106849.1900000004
 Transformer,SupportVectorRegressor,64,300,3498289.6799999997
-Transformer,GradientDescentRegression,256,50,0
-Transformer,GradientDescentRegression,256,100,0
-Transformer,GradientDescentRegression,256,150,0
-Transformer,GradientDescentRegression,256,200,0
-Transformer,GradientDescentRegression,256,250,0
-Transformer,GradientDescentRegression,256,300,0
-Transformer,GradientDescentRegression,128,50,0
-Transformer,GradientDescentRegression,128,100,0
-Transformer,GradientDescentRegression,128,150,0
-Transformer,GradientDescentRegression,128,200,0
-Transformer,GradientDescentRegression,128,250,0
-Transformer,GradientDescentRegression,128,300,0
-Transformer,GradientDescentRegression,64,50,0
-Transformer,GradientDescentRegression,64,100,0
-Transformer,GradientDescentRegression,64,150,0
-Transformer,GradientDescentRegression,64,200,0
-Transformer,GradientDescentRegression,64,250,0
-Transformer,GradientDescentRegression,64,300,0
 Transformer,XGBoost,256,50,3346409.13
 Transformer,XGBoost,256,100,3819922.31
 Transformer,XGBoost,256,150,3510757.6799999997
@@ -233,15 +215,15 @@ Transformer,Huber,64,150,3329539.96
 Transformer,Huber,64,200,3385795.61
 Transformer,Huber,64,250,3628327.4200000004
 Transformer,Huber,64,300,0
-Transformer,Lasso,256,50,0
-Transformer,Lasso,256,100,0
-Transformer,Lasso,256,150,0
-Transformer,Lasso,256,200,0
-Transformer,Lasso,256,250,0
+Transformer,Lasso,256,50,3562757.2199999997
+Transformer,Lasso,256,100,3364760.5200000005
+Transformer,Lasso,256,150,3414936.2199999997
+Transformer,Lasso,256,200,6542797.359999999
+Transformer,Lasso,256,250,4612526.36
 Transformer,Lasso,256,300,0
-Transformer,Lasso,128,50,0
-Transformer,Lasso,128,100,0
-Transformer,Lasso,128,150,0
+Transformer,Lasso,128,50,3426792.29
+Transformer,Lasso,128,100,12002863.920000002
+Transformer,Lasso,128,150,3717524.2099999995
 Transformer,Lasso,128,200,0
 Transformer,Lasso,128,250,0
 Transformer,Lasso,128,300,0
@@ -269,7 +251,7 @@ Transformer,Ridge,64,150,0
 Transformer,Ridge,64,200,0
 Transformer,Ridge,64,250,0
 Transformer,Ridge,64,300,0
-LSTM,ExtraTreesRegressor,256,50,0
+LSTM,ExtraTreesRegressor,256,50,3446183.67
 LSTM,ExtraTreesRegressor,256,100,0
 LSTM,ExtraTreesRegressor,256,150,0
 LSTM,ExtraTreesRegressor,256,200,0
@@ -395,24 +377,6 @@ LSTM,SupportVectorRegressor,64,150,0
 LSTM,SupportVectorRegressor,64,200,0
 LSTM,SupportVectorRegressor,64,250,0
 LSTM,SupportVectorRegressor,64,300,0
-LSTM,GradientDescentRegression,256,50,0
-LSTM,GradientDescentRegression,256,100,0
-LSTM,GradientDescentRegression,256,150,0
-LSTM,GradientDescentRegression,256,200,0
-LSTM,GradientDescentRegression,256,250,0
-LSTM,GradientDescentRegression,256,300,0
-LSTM,GradientDescentRegression,128,50,0
-LSTM,GradientDescentRegression,128,100,0
-LSTM,GradientDescentRegression,128,150,0
-LSTM,GradientDescentRegression,128,200,0
-LSTM,GradientDescentRegression,128,250,0
-LSTM,GradientDescentRegression,128,300,0
-LSTM,GradientDescentRegression,64,50,0
-LSTM,GradientDescentRegression,64,100,0
-LSTM,GradientDescentRegression,64,150,0
-LSTM,GradientDescentRegression,64,200,0
-LSTM,GradientDescentRegression,64,250,0
-LSTM,GradientDescentRegression,64,300,0
 LSTM,XGBoost,256,50,0
 LSTM,XGBoost,256,100,0
 LSTM,XGBoost,256,150,0
@@ -594,7 +558,7 @@ GRU,VotingRegressor,64,200,0
 GRU,VotingRegressor,64,250,0
 GRU,VotingRegressor,64,300,0
 GRU,Linear,256,50,3577840.9199999995
-GRU,Linear,256,100,0
+GRU,Linear,256,100,3262830.2199999997
 GRU,Linear,256,150,0
 GRU,Linear,256,200,0
 GRU,Linear,256,250,0
@@ -665,24 +629,6 @@ GRU,SupportVectorRegressor,64,150,0
 GRU,SupportVectorRegressor,64,200,0
 GRU,SupportVectorRegressor,64,250,0
 GRU,SupportVectorRegressor,64,300,0
-GRU,GradientDescentRegression,256,50,0
-GRU,GradientDescentRegression,256,100,0
-GRU,GradientDescentRegression,256,150,0
-GRU,GradientDescentRegression,256,200,0
-GRU,GradientDescentRegression,256,250,0
-GRU,GradientDescentRegression,256,300,0
-GRU,GradientDescentRegression,128,50,0
-GRU,GradientDescentRegression,128,100,0
-GRU,GradientDescentRegression,128,150,0
-GRU,GradientDescentRegression,128,200,0
-GRU,GradientDescentRegression,128,250,0
-GRU,GradientDescentRegression,128,300,0
-GRU,GradientDescentRegression,64,50,0
-GRU,GradientDescentRegression,64,100,0
-GRU,GradientDescentRegression,64,150,0
-GRU,GradientDescentRegression,64,200,0
-GRU,GradientDescentRegression,64,250,0
-GRU,GradientDescentRegression,64,300,0
 GRU,XGBoost,256,50,0
 GRU,XGBoost,256,100,0
 GRU,XGBoost,256,150,0
@@ -935,24 +881,6 @@ Simple RNN,SupportVectorRegressor,64,150,0
 Simple RNN,SupportVectorRegressor,64,200,0
 Simple RNN,SupportVectorRegressor,64,250,0
 Simple RNN,SupportVectorRegressor,64,300,0
-Simple RNN,GradientDescentRegression,256,50,0
-Simple RNN,GradientDescentRegression,256,100,0
-Simple RNN,GradientDescentRegression,256,150,0
-Simple RNN,GradientDescentRegression,256,200,0
-Simple RNN,GradientDescentRegression,256,250,0
-Simple RNN,GradientDescentRegression,256,300,0
-Simple RNN,GradientDescentRegression,128,50,0
-Simple RNN,GradientDescentRegression,128,100,0
-Simple RNN,GradientDescentRegression,128,150,0
-Simple RNN,GradientDescentRegression,128,200,0
-Simple RNN,GradientDescentRegression,128,250,0
-Simple RNN,GradientDescentRegression,128,300,0
-Simple RNN,GradientDescentRegression,64,50,0
-Simple RNN,GradientDescentRegression,64,100,0
-Simple RNN,GradientDescentRegression,64,150,0
-Simple RNN,GradientDescentRegression,64,200,0
-Simple RNN,GradientDescentRegression,64,250,0
-Simple RNN,GradientDescentRegression,64,300,0
 Simple RNN,XGBoost,256,50,0
 Simple RNN,XGBoost,256,100,0
 Simple RNN,XGBoost,256,150,0
@@ -1079,7 +1007,7 @@ Simple RNN,Ridge,64,150,0
 Simple RNN,Ridge,64,200,0
 Simple RNN,Ridge,64,250,0
 Simple RNN,Ridge,64,300,0
-Bidirectional LSTM,ExtraTreesRegressor,256,50,0
+Bidirectional LSTM,ExtraTreesRegressor,256,50,3368246.16
 Bidirectional LSTM,ExtraTreesRegressor,256,100,0
 Bidirectional LSTM,ExtraTreesRegressor,256,150,0
 Bidirectional LSTM,ExtraTreesRegressor,256,200,0
@@ -1205,24 +1133,6 @@ Bidirectional LSTM,SupportVectorRegressor,64,150,0
 Bidirectional LSTM,SupportVectorRegressor,64,200,0
 Bidirectional LSTM,SupportVectorRegressor,64,250,0
 Bidirectional LSTM,SupportVectorRegressor,64,300,0
-Bidirectional LSTM,GradientDescentRegression,256,50,0
-Bidirectional LSTM,GradientDescentRegression,256,100,0
-Bidirectional LSTM,GradientDescentRegression,256,150,0
-Bidirectional LSTM,GradientDescentRegression,256,200,0
-Bidirectional LSTM,GradientDescentRegression,256,250,0
-Bidirectional LSTM,GradientDescentRegression,256,300,0
-Bidirectional LSTM,GradientDescentRegression,128,50,0
-Bidirectional LSTM,GradientDescentRegression,128,100,0
-Bidirectional LSTM,GradientDescentRegression,128,150,0
-Bidirectional LSTM,GradientDescentRegression,128,200,0
-Bidirectional LSTM,GradientDescentRegression,128,250,0
-Bidirectional LSTM,GradientDescentRegression,128,300,0
-Bidirectional LSTM,GradientDescentRegression,64,50,0
-Bidirectional LSTM,GradientDescentRegression,64,100,0
-Bidirectional LSTM,GradientDescentRegression,64,150,0
-Bidirectional LSTM,GradientDescentRegression,64,200,0
-Bidirectional LSTM,GradientDescentRegression,64,250,0
-Bidirectional LSTM,GradientDescentRegression,64,300,0
 Bidirectional LSTM,XGBoost,256,50,0
 Bidirectional LSTM,XGBoost,256,100,0
 Bidirectional LSTM,XGBoost,256,150,0

@@ -60,7 +60,8 @@ def main():
     # epoch_option = [50, 100, 150, 200, 250, 300]
 
     #hopes
-    seq_type = ["GRU", "LSTM", "Simple RNN", "LSTM", "Transformer"]
+    seq_type = ["Transformer", "GRU", "Bidirectional LSTM", "LSTM", "Simple RNN"]
+    # seq_type = ["Bidirectional LSTM"]
     reg_type = ["ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
     batch_size_option = [256, 128]
     epoch_option = [50, 100, 150, 200, 250]
@@ -70,23 +71,18 @@ def main():
 
         if sequential_type == "Transformer":
             regressor = transformer_model((X_train.shape[1], X_train.shape[2]))
-            now_seq = "Transformer"
 
         elif sequential_type == "LSTM":
             regressor = deep_lstm_model((X_train.shape[1], X_train.shape[2]))
-            now_seq = "LSTM"
         
         if sequential_type == "GRU":
             regressor = gru_model((X_train.shape[1], X_train.shape[2]))
-            # now_seq = "GRU"
         
         elif sequential_type == "Simple RNN":
             regressor = simple_rnn_model((X_train.shape[1], X_train.shape[2]))
-            # now_seq = "Simple RNN"
 
         elif sequential_type == "Bidirectional LSTM":
             regressor = bidirectional_lstm_model((X_train.shape[1], X_train.shape[2]))
-            # now_seq = "Bidirectional LSTM"
 
         # print(now_seq)
         for regression_type in reg_type:

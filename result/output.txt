@@ -1618,3 +1618,69 @@ Epochs: 50
 
 總合計差距（從第二列開始）：3577840.9199999995
 
+Regression Type: Linear
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3262830.2199999997
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3562757.2199999997
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3364760.5200000005
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3414936.2199999997
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：6542797.359999999
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：4612526.36
+
+Regression Type: Lasso
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：3426792.29
+
+Regression Type: Lasso
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：12002863.920000002
+
+Regression Type: Lasso
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：3717524.2099999995
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3446183.67
+
+Regression Type: ExtraTreesRegressor
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3368246.16
+
