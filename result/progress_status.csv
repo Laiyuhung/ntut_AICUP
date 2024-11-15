@@ -584,8 +584,8 @@ GRU,VotingRegressor,256,300,0
 GRU,VotingRegressor,128,50,3560503.25
 GRU,VotingRegressor,128,100,3692386.4499999997
 GRU,VotingRegressor,128,150,3470188.3499999996
-GRU,VotingRegressor,128,200,0
-GRU,VotingRegressor,128,250,0
+GRU,VotingRegressor,128,200,3276011.49
+GRU,VotingRegressor,128,250,5485979.0
 GRU,VotingRegressor,128,300,0
 GRU,VotingRegressor,64,50,0
 GRU,VotingRegressor,64,100,0
@@ -593,7 +593,7 @@ GRU,VotingRegressor,64,150,0
 GRU,VotingRegressor,64,200,0
 GRU,VotingRegressor,64,250,0
 GRU,VotingRegressor,64,300,0
-GRU,Linear,256,50,0
+GRU,Linear,256,50,3577840.9199999995
 GRU,Linear,256,100,0
 GRU,Linear,256,150,0
 GRU,Linear,256,200,0
