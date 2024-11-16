@@ -8,10 +8,10 @@ def build_status(seq_model_type, reg_type, batch_size_option, epoch_option):
 
     loaded_array = np.load('./result/progress_status.npy')
     
-    cartesian = np.array(list(product([seq_model_type],reg_type, batch_size_option, epoch_option)))
+    cartesian = np.array(list(product([seq_model_type],[reg_type], batch_size_option, epoch_option)))
     status = 0
 
-    # print(cartesian)
+    print(cartesian)
     # new_array = []
     # for item in loaded_array:
     #     # 將插入後的結果加入新陣列
@@ -58,7 +58,7 @@ def status_print():
 
 def manuel_modify_status():
 
-    loaded_array = np.load('./result/progress_status.npy')
+    loaded_array = np.load('./result/laiwen.npy')
 
     filtered_data = loaded_array[loaded_array[:, 1] != "GradientDescentRegression"]
 
@@ -66,8 +66,8 @@ def manuel_modify_status():
             
 
     # print(loaded_array)
-    # np.save('./result/progress_status.npy', filtered_data)
-    # result_to_csv()
+    np.save('./result/laiwen.npy', filtered_data)
+    result_to_csv()
 
 
 def modify_status(seq_type, reg_type, batch_size_option, epoch_option, status):
@@ -95,12 +95,13 @@ def check_status(seq_type,reg_type, batch_size, epoch):
 
 def merge_npy():
     loaded1 = np.load('./result/progress_status.npy')
-    loaded2 = np.load('./result/progress_status_outer.npy')
+    loaded2 = np.load('./result/laiwen.npy')
 
-    for item1 in loaded1:
-            for item2 in loaded2:
-               if item1[4] == '0' and item2[4] != '0': 
-                   item1[4] == item2[4]
+    for i in range(loaded1.shape[0]):
+        if loaded1[i, 4] != loaded2[i, 4] and loaded1[i, 4] == '0':
+            loaded1[i, 4] = loaded2[i, 4]
+            # print(f"第 {i+1} 列的第 5 個元素不同。")
+
 
     # np.save('./result/progress_status.npy', loaded1)
     # result_to_csv()            

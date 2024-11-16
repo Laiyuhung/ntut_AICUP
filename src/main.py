@@ -61,8 +61,9 @@ def main():
 
     #hopes
     seq_type = ["Transformer", "GRU", "Bidirectional LSTM", "LSTM", "Simple RNN"]
-    # seq_type = ["Bidirectional LSTM"]
+    # seq_type = ["GRU"]
     reg_type = ["ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
+    # reg_type = ["Linear"]
     batch_size_option = [256, 128]
     epoch_option = [50, 100, 150, 200, 250]
     

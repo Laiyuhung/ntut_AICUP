@@ -215,17 +215,17 @@ Transformer,Huber,64,150,3329539.96
 Transformer,Huber,64,200,3385795.61
 Transformer,Huber,64,250,3628327.4200000004
 Transformer,Huber,64,300,0
-Transformer,Lasso,256,50,3562757.2199999997
-Transformer,Lasso,256,100,3364760.5200000005
-Transformer,Lasso,256,150,3414936.2199999997
-Transformer,Lasso,256,200,6542797.359999999
-Transformer,Lasso,256,250,4612526.36
+Transformer,Lasso,256,50,0
+Transformer,Lasso,256,100,0
+Transformer,Lasso,256,150,0
+Transformer,Lasso,256,200,0
+Transformer,Lasso,256,250,0
 Transformer,Lasso,256,300,0
-Transformer,Lasso,128,50,3426792.29
-Transformer,Lasso,128,100,12002863.920000002
-Transformer,Lasso,128,150,3717524.2099999995
-Transformer,Lasso,128,200,3168696.72
-Transformer,Lasso,128,250,3289600.38
+Transformer,Lasso,128,50,0
+Transformer,Lasso,128,100,0
+Transformer,Lasso,128,150,0
+Transformer,Lasso,128,200,0
+Transformer,Lasso,128,250,0
 Transformer,Lasso,128,300,0
 Transformer,Lasso,64,50,0
 Transformer,Lasso,64,100,0
@@ -233,17 +233,17 @@ Transformer,Lasso,64,150,0
 Transformer,Lasso,64,200,0
 Transformer,Lasso,64,250,0
 Transformer,Lasso,64,300,0
-Transformer,Ridge,256,50,3854467.17
-Transformer,Ridge,256,100,3345493.38
-Transformer,Ridge,256,150,6005915.790000001
-Transformer,Ridge,256,200,4396800.88
-Transformer,Ridge,256,250,3263759.6900000004
+Transformer,Ridge,256,50,0
+Transformer,Ridge,256,100,0
+Transformer,Ridge,256,150,0
+Transformer,Ridge,256,200,0
+Transformer,Ridge,256,250,0
 Transformer,Ridge,256,300,0
-Transformer,Ridge,128,50,3292685.38
-Transformer,Ridge,128,100,3519358.03
-Transformer,Ridge,128,150,5509661.9799999995
-Transformer,Ridge,128,200,4765967.51
-Transformer,Ridge,128,250,4282923.0
+Transformer,Ridge,128,50,0
+Transformer,Ridge,128,100,0
+Transformer,Ridge,128,150,0
+Transformer,Ridge,128,200,0
+Transformer,Ridge,128,250,0
 Transformer,Ridge,128,300,0
 Transformer,Ridge,64,50,0
 Transformer,Ridge,64,100,0
@@ -251,7 +251,7 @@ Transformer,Ridge,64,150,0
 Transformer,Ridge,64,200,0
 Transformer,Ridge,64,250,0
 Transformer,Ridge,64,300,0
-LSTM,ExtraTreesRegressor,256,50,3446183.67
+LSTM,ExtraTreesRegressor,256,50,0
 LSTM,ExtraTreesRegressor,256,100,0
 LSTM,ExtraTreesRegressor,256,150,0
 LSTM,ExtraTreesRegressor,256,200,0
@@ -539,17 +539,17 @@ GRU,KnnRegression,64,150,0
 GRU,KnnRegression,64,200,0
 GRU,KnnRegression,64,250,0
 GRU,KnnRegression,64,300,0
-GRU,VotingRegressor,256,50,3211609.0599999996
-GRU,VotingRegressor,256,100,3356465.83
-GRU,VotingRegressor,256,150,3245591.87
-GRU,VotingRegressor,256,200,3332704.78
-GRU,VotingRegressor,256,250,3259233.5999999996
+GRU,VotingRegressor,256,50,0
+GRU,VotingRegressor,256,100,0
+GRU,VotingRegressor,256,150,0
+GRU,VotingRegressor,256,200,0
+GRU,VotingRegressor,256,250,0
 GRU,VotingRegressor,256,300,0
-GRU,VotingRegressor,128,50,3560503.25
-GRU,VotingRegressor,128,100,3692386.4499999997
-GRU,VotingRegressor,128,150,3470188.3499999996
-GRU,VotingRegressor,128,200,3276011.49
-GRU,VotingRegressor,128,250,5485979.0
+GRU,VotingRegressor,128,50,0
+GRU,VotingRegressor,128,100,0
+GRU,VotingRegressor,128,150,0
+GRU,VotingRegressor,128,200,0
+GRU,VotingRegressor,128,250,0
 GRU,VotingRegressor,128,300,0
 GRU,VotingRegressor,64,50,0
 GRU,VotingRegressor,64,100,0
@@ -557,35 +557,35 @@ GRU,VotingRegressor,64,150,0
 GRU,VotingRegressor,64,200,0
 GRU,VotingRegressor,64,250,0
 GRU,VotingRegressor,64,300,0
-GRU,Linear,256,50,3577840.9199999995
-GRU,Linear,256,100,3262830.2199999997
-GRU,Linear,256,150,4489052.62
-GRU,Linear,256,200,3913582.65
-GRU,Linear,256,250,3449036.28
+GRU,Linear,256,50,0
+GRU,Linear,256,100,0
+GRU,Linear,256,150,0
+GRU,Linear,256,200,0
+GRU,Linear,256,250,0
 GRU,Linear,256,300,0
-GRU,Linear,128,50,3257663.6800000006
-GRU,Linear,128,100,3243770.9399999995
-GRU,Linear,128,150,3714480.26
-GRU,Linear,128,200,3126511.6
-GRU,Linear,128,250,11241559.51
+GRU,Linear,128,50,0
+GRU,Linear,128,100,0
+GRU,Linear,128,150,0
+GRU,Linear,128,200,0
+GRU,Linear,128,250,0
 GRU,Linear,128,300,0
 GRU,Linear,64,50,0
 GRU,Linear,64,100,0
-GRU,Linear,64,150,3429789.26
-GRU,Linear,64,200,3209945.1
-GRU,Linear,64,250,3574269.3699999996
+GRU,Linear,64,150,0
+GRU,Linear,64,200,0
+GRU,Linear,64,250,0
 GRU,Linear,64,300,0
-GRU,RandomForestRegressor,256,50,3274280.2199999997
-GRU,RandomForestRegressor,256,100,3282653.33
-GRU,RandomForestRegressor,256,150,7663760.399999999
-GRU,RandomForestRegressor,256,200,5068982.78
-GRU,RandomForestRegressor,256,250,4170013.86
+GRU,RandomForestRegressor,256,50,0
+GRU,RandomForestRegressor,256,100,0
+GRU,RandomForestRegressor,256,150,0
+GRU,RandomForestRegressor,256,200,0
+GRU,RandomForestRegressor,256,250,0
 GRU,RandomForestRegressor,256,300,0
-GRU,RandomForestRegressor,128,50,3543406.3
-GRU,RandomForestRegressor,128,100,3554315.0100000007
-GRU,RandomForestRegressor,128,150,3409361.74
-GRU,RandomForestRegressor,128,200,3683246.29
-GRU,RandomForestRegressor,128,250,3359567.74
+GRU,RandomForestRegressor,128,50,0
+GRU,RandomForestRegressor,128,100,0
+GRU,RandomForestRegressor,128,150,0
+GRU,RandomForestRegressor,128,200,0
+GRU,RandomForestRegressor,128,250,0
 GRU,RandomForestRegressor,128,300,0
 GRU,RandomForestRegressor,64,50,0
 GRU,RandomForestRegressor,64,100,0
@@ -593,17 +593,17 @@ GRU,RandomForestRegressor,64,150,0
 GRU,RandomForestRegressor,64,200,0
 GRU,RandomForestRegressor,64,250,0
 GRU,RandomForestRegressor,64,300,0
-GRU,GradientBoostingRegressor,256,50,3156802.8600000003
-GRU,GradientBoostingRegressor,256,100,3183731.8
-GRU,GradientBoostingRegressor,256,150,3237428.58
-GRU,GradientBoostingRegressor,256,200,6376675.4399999995
-GRU,GradientBoostingRegressor,256,250,3264223.37
+GRU,GradientBoostingRegressor,256,50,0
+GRU,GradientBoostingRegressor,256,100,0
+GRU,GradientBoostingRegressor,256,150,0
+GRU,GradientBoostingRegressor,256,200,0
+GRU,GradientBoostingRegressor,256,250,0
 GRU,GradientBoostingRegressor,256,300,0
-GRU,GradientBoostingRegressor,128,50,3172263.59
-GRU,GradientBoostingRegressor,128,100,3312874.87
-GRU,GradientBoostingRegressor,128,150,4822762.350000001
-GRU,GradientBoostingRegressor,128,200,3830019.7199999997
-GRU,GradientBoostingRegressor,128,250,5192294.460000001
+GRU,GradientBoostingRegressor,128,50,0
+GRU,GradientBoostingRegressor,128,100,0
+GRU,GradientBoostingRegressor,128,150,0
+GRU,GradientBoostingRegressor,128,200,0
+GRU,GradientBoostingRegressor,128,250,0
 GRU,GradientBoostingRegressor,128,300,0
 GRU,GradientBoostingRegressor,64,50,0
 GRU,GradientBoostingRegressor,64,100,0
@@ -1007,7 +1007,7 @@ Simple RNN,Ridge,64,150,0
 Simple RNN,Ridge,64,200,0
 Simple RNN,Ridge,64,250,0
 Simple RNN,Ridge,64,300,0
-Bidirectional LSTM,ExtraTreesRegressor,256,50,3368246.16
+Bidirectional LSTM,ExtraTreesRegressor,256,50,0
 Bidirectional LSTM,ExtraTreesRegressor,256,100,0
 Bidirectional LSTM,ExtraTreesRegressor,256,150,0
 Bidirectional LSTM,ExtraTreesRegressor,256,200,0
@@ -1259,4 +1259,3 @@ Bidirectional LSTM,Ridge,64,150,0
 Bidirectional LSTM,Ridge,64,200,0
 Bidirectional LSTM,Ridge,64,250,0
 Bidirectional LSTM,Ridge,64,300,0
-GRU,Linear,32,200,10747860.76
