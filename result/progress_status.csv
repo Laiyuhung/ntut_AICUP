@@ -746,8 +746,8 @@ GRU,Ridge,256,300,0
 GRU,Ridge,128,50,3240468.25
 GRU,Ridge,128,100,6415975.0
 GRU,Ridge,128,150,6673914.340000001
-GRU,Ridge,128,200,0
-GRU,Ridge,128,250,0
+GRU,Ridge,128,200,6797867.43
+GRU,Ridge,128,250,3282028.18
 GRU,Ridge,128,300,0
 GRU,Ridge,64,50,0
 GRU,Ridge,64,100,0
@@ -1008,16 +1008,16 @@ Simple RNN,Ridge,64,200,0
 Simple RNN,Ridge,64,250,0
 Simple RNN,Ridge,64,300,0
 Bidirectional LSTM,ExtraTreesRegressor,256,50,3368246.16
-Bidirectional LSTM,ExtraTreesRegressor,256,100,0
-Bidirectional LSTM,ExtraTreesRegressor,256,150,0
-Bidirectional LSTM,ExtraTreesRegressor,256,200,0
-Bidirectional LSTM,ExtraTreesRegressor,256,250,0
+Bidirectional LSTM,ExtraTreesRegressor,256,100,6232626.199999999
+Bidirectional LSTM,ExtraTreesRegressor,256,150,6157437.62
+Bidirectional LSTM,ExtraTreesRegressor,256,200,3457217.5399999996
+Bidirectional LSTM,ExtraTreesRegressor,256,250,5387236.69
 Bidirectional LSTM,ExtraTreesRegressor,256,300,0
-Bidirectional LSTM,ExtraTreesRegressor,128,50,0
-Bidirectional LSTM,ExtraTreesRegressor,128,100,0
-Bidirectional LSTM,ExtraTreesRegressor,128,150,0
-Bidirectional LSTM,ExtraTreesRegressor,128,200,0
-Bidirectional LSTM,ExtraTreesRegressor,128,250,0
+Bidirectional LSTM,ExtraTreesRegressor,128,50,3285647.65
+Bidirectional LSTM,ExtraTreesRegressor,128,100,3354662.27
+Bidirectional LSTM,ExtraTreesRegressor,128,150,5033614.340000001
+Bidirectional LSTM,ExtraTreesRegressor,128,200,3974380.8299999996
+Bidirectional LSTM,ExtraTreesRegressor,128,250,3769565.12
 Bidirectional LSTM,ExtraTreesRegressor,128,300,0
 Bidirectional LSTM,ExtraTreesRegressor,64,50,0
 Bidirectional LSTM,ExtraTreesRegressor,64,100,0
@@ -1025,17 +1025,17 @@ Bidirectional LSTM,ExtraTreesRegressor,64,150,0
 Bidirectional LSTM,ExtraTreesRegressor,64,200,0
 Bidirectional LSTM,ExtraTreesRegressor,64,250,0
 Bidirectional LSTM,ExtraTreesRegressor,64,300,0
-Bidirectional LSTM,KnnRegression,256,50,0
-Bidirectional LSTM,KnnRegression,256,100,0
-Bidirectional LSTM,KnnRegression,256,150,0
-Bidirectional LSTM,KnnRegression,256,200,0
-Bidirectional LSTM,KnnRegression,256,250,0
+Bidirectional LSTM,KnnRegression,256,50,3655693.95
+Bidirectional LSTM,KnnRegression,256,100,3381961.0499999993
+Bidirectional LSTM,KnnRegression,256,150,4176824.7300000004
+Bidirectional LSTM,KnnRegression,256,200,3459396.6899999995
+Bidirectional LSTM,KnnRegression,256,250,3395017.18
 Bidirectional LSTM,KnnRegression,256,300,0
-Bidirectional LSTM,KnnRegression,128,50,0
-Bidirectional LSTM,KnnRegression,128,100,0
-Bidirectional LSTM,KnnRegression,128,150,0
-Bidirectional LSTM,KnnRegression,128,200,0
-Bidirectional LSTM,KnnRegression,128,250,0
+Bidirectional LSTM,KnnRegression,128,50,3235214.43
+Bidirectional LSTM,KnnRegression,128,100,3315353.88
+Bidirectional LSTM,KnnRegression,128,150,3346541.8200000003
+Bidirectional LSTM,KnnRegression,128,200,3230387.6899999995
+Bidirectional LSTM,KnnRegression,128,250,3239072.18
 Bidirectional LSTM,KnnRegression,128,300,0
 Bidirectional LSTM,KnnRegression,64,50,0
 Bidirectional LSTM,KnnRegression,64,100,0
@@ -1043,17 +1043,17 @@ Bidirectional LSTM,KnnRegression,64,150,0
 Bidirectional LSTM,KnnRegression,64,200,0
 Bidirectional LSTM,KnnRegression,64,250,0
 Bidirectional LSTM,KnnRegression,64,300,0
-Bidirectional LSTM,VotingRegressor,256,50,0
-Bidirectional LSTM,VotingRegressor,256,100,0
-Bidirectional LSTM,VotingRegressor,256,150,0
-Bidirectional LSTM,VotingRegressor,256,200,0
-Bidirectional LSTM,VotingRegressor,256,250,0
+Bidirectional LSTM,VotingRegressor,256,50,3506426.5
+Bidirectional LSTM,VotingRegressor,256,100,3547347.1
+Bidirectional LSTM,VotingRegressor,256,150,3588374.4499999997
+Bidirectional LSTM,VotingRegressor,256,200,3529370.52
+Bidirectional LSTM,VotingRegressor,256,250,3818841.85
 Bidirectional LSTM,VotingRegressor,256,300,0
-Bidirectional LSTM,VotingRegressor,128,50,0
-Bidirectional LSTM,VotingRegressor,128,100,0
-Bidirectional LSTM,VotingRegressor,128,150,0
-Bidirectional LSTM,VotingRegressor,128,200,0
-Bidirectional LSTM,VotingRegressor,128,250,0
+Bidirectional LSTM,VotingRegressor,128,50,3247570.5300000003
+Bidirectional LSTM,VotingRegressor,128,100,3556348.52
+Bidirectional LSTM,VotingRegressor,128,150,3566166.24
+Bidirectional LSTM,VotingRegressor,128,200,4273295.56
+Bidirectional LSTM,VotingRegressor,128,250,4688385.36
 Bidirectional LSTM,VotingRegressor,128,300,0
 Bidirectional LSTM,VotingRegressor,64,50,0
 Bidirectional LSTM,VotingRegressor,64,100,0
@@ -1061,10 +1061,10 @@ Bidirectional LSTM,VotingRegressor,64,150,0
 Bidirectional LSTM,VotingRegressor,64,200,0
 Bidirectional LSTM,VotingRegressor,64,250,0
 Bidirectional LSTM,VotingRegressor,64,300,0
-Bidirectional LSTM,Linear,256,50,0
-Bidirectional LSTM,Linear,256,100,0
-Bidirectional LSTM,Linear,256,150,0
-Bidirectional LSTM,Linear,256,200,0
+Bidirectional LSTM,Linear,256,50,3241188.0900000003
+Bidirectional LSTM,Linear,256,100,10409784.600000001
+Bidirectional LSTM,Linear,256,150,3372512.45
+Bidirectional LSTM,Linear,256,200,3388568.3600000003
 Bidirectional LSTM,Linear,256,250,0
 Bidirectional LSTM,Linear,256,300,0
 Bidirectional LSTM,Linear,128,50,0
