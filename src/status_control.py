@@ -117,6 +117,16 @@ def result_to_csv():
     # Save as .csv file
     df.to_csv('./result/progress_status.csv', index=False)  # Replace with desired .csv file name
 
+def test():  
+    # 載入 .npy 檔案
+    data = np.load('./result/progress_status.npy')
+
+    # 刪除最後一個元素
+    data = data[:-1]
+    print(data)
+    # 儲存回 .npy 檔案
+    np.save('./result/progress_status.npy', data)
+    result_to_csv()   
 
 # def test():
 
