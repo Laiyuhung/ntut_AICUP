@@ -124,18 +124,21 @@ def sort_result():
 
     # 將第五欄轉換為整數
     fifth_column_int = data[:, 4].astype(float)
+    
 
     # 過濾掉第五欄為 0 的行
     filtered_data = data[fifth_column_int != 0]
+    third_col = filtered_data[:, 2].astype(int)
+    filtered_data = filtered_data[third_col == 128]
 
     # 根據第五欄進行排序
     sorted_data = filtered_data[filtered_data[:, 4].astype(float).argsort()]
 
     # 如果需要，將排序後的數據保存回 .npy 文件
-    np.save('./result/sorted_status.npy', sorted_data)  # 替換 'sorted_file.npy' 為你想保存的文件名稱
+    np.save('./result/128_sorted_status.npy', sorted_data)  # 替換 'sorted_file.npy' 為你想保存的文件名稱
 
     df = pd.DataFrame(sorted_data)
-    df.to_csv('./result/sorted_status.csv', index=False)
+    df.to_csv('./result/128_sorted_status.csv', index=False)
 
 
 # def test():

@@ -2260,3 +2260,159 @@ Epochs: 100
 
 總合計差距（從第二列開始）：3216402.6
 
+Regression Type: Huber
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3262731.5900000003
+
+Regression Type: Huber
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：6162357.33
+
+Regression Type: Huber
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3334717.37
+
+Regression Type: Huber
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：3419058.3200000003
+
+Regression Type: Huber
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：3314377.3000000003
+
+Regression Type: Huber
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：4287817.65
+
+Regression Type: Huber
+Batch Size: 128
+Epochs: 200
+
+總合計差距（從第二列開始）：3357230.5999999996
+
+Regression Type: Huber
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：3685898.63
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3423097.68
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：4383980.890000001
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3587507.96
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：4226707.85
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3133098.58
+
+Regression Type: Lasso
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：3210659.5900000003
+
+Regression Type: Lasso
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：3326486.0
+
+Regression Type: Lasso
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：7504421.879999999
+
+Regression Type: Lasso
+Batch Size: 128
+Epochs: 200
+
+總合計差距（從第二列開始）：3708159.99
+
+Regression Type: Lasso
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：3514130.3000000003
+
+Regression Type: Ridge
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3221052.7500000005
+
+Regression Type: Ridge
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3279774.3099999996
+
+Regression Type: Ridge
+Batch Size: 256
+Epochs: 150
+
+總合計差距（從第二列開始）：3663873.72
+
+Regression Type: Ridge
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：3530831.3700000006
+
+Regression Type: Ridge
+Batch Size: 256
+Epochs: 250
+
+總合計差距（從第二列開始）：3293551.67
+
+Regression Type: Ridge
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：3240468.25
+
+Regression Type: Ridge
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：6415975.0
+
+Regression Type: Ridge
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：6673914.340000001
+
