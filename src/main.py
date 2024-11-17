@@ -156,6 +156,7 @@ def main():
 
                         modify_status(sequential_type, regression_type, batch_size, epochs, total_difference)
                         status_print()
+                        sort_result()
 
 
 

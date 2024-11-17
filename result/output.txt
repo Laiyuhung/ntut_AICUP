@@ -2242,3 +2242,21 @@ Epochs: 200
 
 總合計差距（從第二列開始）：3912075.52
 
+Regression Type: ElasticNet
+Batch Size: 128
+Epochs: 250
+
+總合計差距（從第二列開始）：3489941.99
+
+Regression Type: Huber
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3192123.43
+
+Regression Type: Huber
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：3216402.6
+

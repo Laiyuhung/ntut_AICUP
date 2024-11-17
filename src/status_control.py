@@ -117,16 +117,26 @@ def result_to_csv():
     # Save as .csv file
     df.to_csv('./result/progress_status.csv', index=False)  # Replace with desired .csv file name
 
-def test():  
-    # 載入 .npy 檔案
-    data = np.load('./result/progress_status.npy')
+def sort_result():
 
-    # 刪除最後一個元素
-    data = data[:-1]
-    print(data)
-    # 儲存回 .npy 檔案
-    np.save('./result/progress_status.npy', data)
-    result_to_csv()   
+    # 讀取 .npy 文件
+    data = np.load('./result/progress_status.npy')  # 替換 'your_file.npy' 為你的 .npy 文件名稱
+
+    # 將第五欄轉換為整數
+    fifth_column_int = data[:, 4].astype(float)
+
+    # 過濾掉第五欄為 0 的行
+    filtered_data = data[fifth_column_int != 0]
+
+    # 根據第五欄進行排序
+    sorted_data = filtered_data[filtered_data[:, 4].astype(float).argsort()]
+
+    # 如果需要，將排序後的數據保存回 .npy 文件
+    np.save('./result/sorted_status.npy', sorted_data)  # 替換 'sorted_file.npy' 為你想保存的文件名稱
+
+    df = pd.DataFrame(sorted_data)
+    df.to_csv('./result/sorted_status.csv', index=False)
+
 
 # def test():
 

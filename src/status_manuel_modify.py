@@ -9,3 +9,4 @@ epoch_option = [50, 100, 150, 200, 250, 300]
 # status_print()
 # result_to_csv()
 # merge_npy()
+sort_result()
