@@ -254,6 +254,7 @@ Bidirectional LSTM,GradientBoostingRegressor,256,150,3622106.7600000002
 Transformer,Huber,64,250,3628327.4200000004
 Transformer,LightGBM,256,150,3629310.3199999994
 GRU,CatBoost,128,150,3640894.4
+Transformer,Lasso,128,300,3643440.7800000003
 Transformer,Huber,256,100,3650835.9999999995
 Transformer,KnnRegression,128,250,3652284.36
 Bidirectional LSTM,KnnRegression,256,50,3655693.95
@@ -338,6 +339,7 @@ Transformer,XGBoost,64,300,4121184.54
 Transformer,ElasticNet,128,300,4124748.5200000005
 Transformer,GradientBoostingRegressor,256,50,4127908.32
 Transformer,Huber,256,200,4130140.25
+Transformer,Lasso,256,300,4141135.89
 GRU,XGBoost,256,250,4149169.61
 Transformer,Huber,128,50,4151229.88
 GRU,LightGBM,128,200,4157533.1599999997

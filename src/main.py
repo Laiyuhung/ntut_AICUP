@@ -60,9 +60,9 @@ def main():
     # hopes
     running_type = "try 1st"
     seq_type = ["Transformer", "GRU", "Bidirectional LSTM", "LSTM", "Simple RNN"]
-    # seq_type = ["Transformer"]
+    # seq_type = ["GRU"]
     reg_type = ["Lasso", "ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Ridge"]
-    # reg_type = ["GradientBoostingRegressor"]
+    # reg_type = ["Linear"]
     batch_size_option = [256, 128]
     epoch_option = [50, 100, 150, 200, 250, 300]
 
@@ -95,7 +95,7 @@ def main():
 
                         if status == 0.0 or running_type == "try again":
                             print("---now progressing---")
-                            print("Running type: ", sequential_type)
+                            print("Running type: ", running_type)
                             print("Sequencial model type: ", sequential_type)
                             print("Regression type: ", regression_type)
                             print("Batch size: ", batch_size)
