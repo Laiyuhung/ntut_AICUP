@@ -13,7 +13,7 @@ def forcast(AllOutPut , lstm , regression_model ):
     LookBackNum = 12
     ForecastNum = 48
 
-    data_name = './data/ExampleTestData/upload.csv'
+    data_name = './data/ExampleTestData/upload(no answer).csv'
     source_data = pd.read_csv(data_name, encoding='utf-8')
     target = ['序號']
     ex_question = source_data[target].values
@@ -51,7 +51,6 @@ def forcast(AllOutPut , lstm , regression_model ):
             
             NewTest = np.array(X_test)
             NewTest = np.reshape(NewTest, (NewTest.shape[0], NewTest.shape[1], 5 ))
-            
             predicted = regressor.predict(NewTest)
             predict_output.append(predicted)
             predict_power.append(np.round(Regression.predict(predicted), 2).flatten())

@@ -1223,8 +1223,8 @@ Bidirectional LSTM,Huber,64,150,0
 Bidirectional LSTM,Huber,64,200,0
 Bidirectional LSTM,Huber,64,250,0
 Bidirectional LSTM,Huber,64,300,0
-Bidirectional LSTM,Lasso,256,50,0
-Bidirectional LSTM,Lasso,256,100,0
+Bidirectional LSTM,Lasso,256,50,3307424.64
+Bidirectional LSTM,Lasso,256,100,8422149.25
 Bidirectional LSTM,Lasso,256,150,0
 Bidirectional LSTM,Lasso,256,200,0
 Bidirectional LSTM,Lasso,256,250,0

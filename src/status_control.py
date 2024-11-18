@@ -140,6 +140,35 @@ def sort_result():
     df = pd.DataFrame(sorted_data)
     df.to_csv('./result/128_sorted_status.csv', index=False)
 
+import pandas as pd
+
+def minus_to_zero():
+    # 讀取 CSV 檔案
+    df = pd.read_csv('./result/output.csv')
+
+    # 遍歷每一列的數據
+    for i in range(9599):
+        try:
+            # 嘗試將每個值轉換為 float，並檢查是否小於 0
+            if float(df.iloc[i, 1]) < 0.0:
+                # 如果小於 0，將其改為 0.0
+                df.iloc[i, 1] = 0.0
+            else:
+                # 否則，保持其為浮點數格式
+                df.iloc[i, 1] = float(df.iloc[i, 1])
+            print( df.iloc[i, 1] )
+        except ValueError:
+            # 如果無法轉換為 float，保留原始值
+            pass
+
+    # 將修改後的 DataFrame 儲存回 CSV 檔案
+    df.to_csv('./result/output_modified.csv', index=False)
+
+    print("已成功將第二行中小於零的值改成 0！")
+
+# minus_to_zero()
+
+
 
 # def test():
 

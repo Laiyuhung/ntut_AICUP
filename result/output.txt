@@ -2752,3 +2752,15 @@ Epochs: 250
 
 總合計差距（從第二列開始）：3446736.22
 
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 50
+
+總合計差距（從第二列開始）：3307424.64
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 100
+
+總合計差距（從第二列開始）：8422149.25
+
