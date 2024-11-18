@@ -58,15 +58,15 @@ def main():
     # epoch_option = [50, 100, 150, 200, 250, 300]
 
     # hopes
-    runnung_type = "try again"
-    # seq_type = ["Transformer", "GRU", "Bidirectional LSTM", "LSTM", "Simple RNN"]
-    seq_type = ["Transformer"]
-    # reg_type = ["Lasso", "ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Ridge"]
-    reg_type = ["GradientBoostingRegressor"]
-    batch_size_option = [128]
-    epoch_option = [150]
+    running_type = "try 1st"
+    seq_type = ["Transformer", "GRU", "Bidirectional LSTM", "LSTM", "Simple RNN"]
+    # seq_type = ["Transformer"]
+    reg_type = ["Lasso", "ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Ridge"]
+    # reg_type = ["GradientBoostingRegressor"]
+    batch_size_option = [256, 128]
+    epoch_option = [50, 100, 150, 200, 250, 300]
 
-    if runnung_type != "competition":
+    if running_type != "competition":
         # print("111")
         for sequential_type in seq_type:
 
@@ -93,7 +93,7 @@ def main():
                         status = check_status(sequential_type, regression_type, batch_size, epochs)
                         # print(status)
 
-                        if status == 0.0 or runnung_type == "try again":
+                        if status == 0.0 or running_type == "try again":
                             print("---now progressing---")
                             print("Running type: ", sequential_type)
                             print("Sequencial model type: ", sequential_type)
@@ -151,18 +151,24 @@ def main():
                                 gradient_descent_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
 
-    if runnung_type != "competition":
-        forcast( AllOutPut = AllOutPut , lstm = 'WeatherTransformer.keras' , regression_model = f'./model/WeatherRegression_{NowDateTime}' )
-        total_difference = calculate(sequential_type, regression_type, batch_size, epochs)
+                            if running_type != "competition":
+                                print("a")
+                                forcast( AllOutPut = AllOutPut , lstm = 'WeatherTransformer.keras' , regression_model = f'./model/WeatherRegression_{NowDateTime}' )
+                                total_difference = calculate(sequential_type, regression_type, batch_size, epochs)
 
-    if runnung_type == "competition":
+                            if running_type == "try 1st":    
+                                print("c")
+                                modify_status(sequential_type, regression_type, batch_size, epochs, total_difference)
+                                status_print()
+                                sort_result()    
+
+            
+    else:
+        print("b")
         comp_forcast( AllOutPut = AllOutPut , lstm = 'WeatherTransformer.keras' , regression_model = f'./model/WeatherRegression_{NowDateTime}' )
 
 
-    if runnung_type == "try 1st":    
-        modify_status(sequential_type, regression_type, batch_size, epochs, total_difference)
-        status_print()
-        sort_result()
+    
 
                     
 

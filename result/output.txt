@@ -2776,3 +2776,9 @@ Epochs: 250
 
 總合計差距（從第二列開始）：3497415.9
 
+Regression Type: GradientBoostingRegressor
+Batch Size: 128
+Epochs: 150
+
+總合計差距（從第二列開始）：3823905.1799999997
+
