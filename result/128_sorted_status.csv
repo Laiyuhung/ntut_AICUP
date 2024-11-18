@@ -23,6 +23,7 @@ Transformer,VotingRegressor,128,50,3250847.54
 GRU,Linear,128,50,3257663.6800000006
 Transformer,ExtraTreesRegressor,128,100,3260304.35
 GRU,CatBoost,128,100,3266134.05
+Bidirectional LSTM,RandomForestRegressor,128,200,3270434.6999999997
 Transformer,XGBoost,128,100,3274471.9400000004
 GRU,VotingRegressor,128,200,3276011.49
 Transformer,VotingRegressor,128,250,3277055.74
@@ -40,6 +41,7 @@ Transformer,SupportVectorRegressor,128,50,3311837.6100000003
 GRU,GradientBoostingRegressor,128,100,3312874.87
 GRU,Huber,128,100,3314377.3000000003
 Bidirectional LSTM,KnnRegression,128,100,3315353.88
+Bidirectional LSTM,RandomForestRegressor,128,50,3321541.1
 Transformer,Huber,128,150,3326192.9699999997
 GRU,Lasso,128,100,3326486.0
 Transformer,Linear,128,200,3327526.42
@@ -67,12 +69,14 @@ GRU,XGBoost,128,100,3419277.21
 Transformer,Lasso,128,50,3426792.29
 Transformer,ElasticNet,128,50,3437981.5599999996
 Transformer,RandomForestRegressor,128,250,3446354.2
+Bidirectional LSTM,RandomForestRegressor,128,250,3455790.4200000004
 Transformer,SupportVectorRegressor,128,200,3467400.68
 GRU,VotingRegressor,128,150,3470188.3499999996
 GRU,XGBoost,128,200,3483787.6399999997
 GRU,ElasticNet,128,250,3489941.99
 GRU,XGBoost,128,250,3504791.88
 GRU,Lasso,128,250,3514130.3000000003
+Bidirectional LSTM,Linear,128,150,3518087.31
 Transformer,Ridge,128,100,3519358.03
 Transformer,RandomForestRegressor,128,150,3530651.44
 GRU,SupportVectorRegressor,128,50,3530906.69
@@ -84,6 +88,7 @@ GRU,RandomForestRegressor,128,100,3554315.0100000007
 Bidirectional LSTM,VotingRegressor,128,100,3556348.52
 GRU,VotingRegressor,128,50,3560503.25
 Bidirectional LSTM,VotingRegressor,128,150,3566166.24
+Bidirectional LSTM,Linear,128,100,3578294.31
 Transformer,CatBoost,128,300,3597773.22
 GRU,ExtraTreesRegressor,128,100,3600642.45
 Transformer,VotingRegressor,128,150,3614318.6799999997
@@ -100,6 +105,8 @@ Transformer,XGBoost,128,300,3702791.49
 GRU,Lasso,128,200,3708159.99
 GRU,Linear,128,150,3714480.26
 Transformer,Lasso,128,150,3717524.2099999995
+Bidirectional LSTM,Linear,128,50,3720778.59
+Bidirectional LSTM,Linear,128,200,3722911.1700000004
 Transformer,Linear,128,150,3735883.96
 Simple RNN,ExtraTreesRegressor,128,100,3761320.58
 Bidirectional LSTM,ExtraTreesRegressor,128,250,3769565.12
@@ -138,12 +145,14 @@ GRU,SupportVectorRegressor,128,200,4698085.35
 Transformer,Huber,128,250,4761099.61
 Transformer,Ridge,128,200,4765967.51
 Transformer,ElasticNet,128,200,4802266.9399999995
+Bidirectional LSTM,Linear,128,250,4805064.51
 GRU,GradientBoostingRegressor,128,150,4822762.350000001
 Transformer,KnnRegression,128,150,4851553.75
 Transformer,XGBoost,128,50,5003459.6899999995
 GRU,KnnRegression,128,250,5021476.359999999
 Bidirectional LSTM,ExtraTreesRegressor,128,150,5033614.340000001
 GRU,GradientBoostingRegressor,128,250,5192294.460000001
+Bidirectional LSTM,RandomForestRegressor,128,150,5201681.77
 Transformer,KnnRegression,128,300,5361942.5
 Transformer,CatBoost,128,100,5438347.670000001
 GRU,VotingRegressor,128,250,5485979.0
@@ -164,6 +173,7 @@ Transformer,Linear,128,300,7273829.1
 Transformer,SupportVectorRegressor,128,300,7279321.369999999
 GRU,LightGBM,128,250,7349331.03
 GRU,Lasso,128,150,7504421.879999999
+Bidirectional LSTM,RandomForestRegressor,128,100,8517750.11
 GRU,CatBoost,128,250,9731007.12
 GRU,CatBoost,128,200,10117856.78
 Transformer,ElasticNet,128,150,10268217.629999999
