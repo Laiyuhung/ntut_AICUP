@@ -31,3 +31,9 @@ Python 3.12
 - 執行./src/status_control.py 中的 status_print() 可得知目前預測進度
 - progress_status.npy 用於儲存狀態之numpy array
 - progress_status.csv 用於儲存狀態之numpy csv
+
+### 比賽模式
+1. 先跑一次想要的組合
+2. 確認誤差是否與前次相差不是很多
+3. 跑competition_forcast
+4. 繳交記得刪第一行

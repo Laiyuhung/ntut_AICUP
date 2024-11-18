@@ -1,11 +1,48 @@
+
 import os
 import numpy as np
 import pandas as pd
 from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 import joblib
+from datetime import datetime
+import time
+import sys
 
-def forcast(AllOutPut , lstm , regression_model ):
+
+from loading_data import *
+from normalize import *
+from forcast import *
+from forcast_match import *
+from status_control import *
+
+sys.path.append('/sequence_models/')
+from sequence_models.tranformation_model import *
+from sequence_models.LSTM_model import *
+from sequence_models.gru_model import *
+from sequence_models.simple_rnn_model import *
+from sequence_models.bidirectional_LSTM import *
+
+
+sys.path.append('/regression_models/')
+from regression import *
+from regression_models.VotingRegressor import *
+from regression_models.KnnRegression import *
+from regression_models.ExtraTreesRegressor import *
+from regression_models.RandomForestRegression import *
+from regression_models.GradientBoostingRegression import *
+from regression_models.SupportVectorRegression import *
+from regression_models.GradientDescentRegression import *
+from regression_models.XgboostRegression import *
+from regression_models.CatboostRegression import *
+from regression_models.LightgbmRegression import *
+from regression_models.ElasticnetRegression import *
+from regression_models.HuberRegression import *
+from regression_models.LassoRegression import *
+from regression_models.RidgeRegression import *
+
+
+def comp_forcast(AllOutPut , lstm , regression_model ):
     regressor = load_model( lstm )
     Regression = joblib.load( regression_model )
     regressor.compile(optimizer='adam', loss='mean_squared_error')
@@ -13,7 +50,7 @@ def forcast(AllOutPut , lstm , regression_model ):
     LookBackNum = 12
     ForecastNum = 48
 
-    data_name = './data/ExampleTestData/upload.csv'
+    data_name = './data/ExampleTestData/upload(no answer).csv'
     source_data = pd.read_csv(data_name, encoding='utf-8')
     target = ['序號']
     ex_question = source_data[target].values
@@ -60,5 +97,13 @@ def forcast(AllOutPut , lstm , regression_model ):
 
     df = pd.DataFrame(predict_power, columns=['答案'])
     df.insert(0, '序號', ex_question )
-    df.to_csv('./result/output.csv', index=False)
+    df.to_csv('./result/conpetition_output.csv', index=False)
     print('Output CSV File Saved')
+
+NowDateTime = datetime.now().strftime("%Y-%m")
+
+start_time = time.time()
+SourceData = loading_data( "./data/ExampleTrainData(AVG)" , True)
+AllOutPut = LSTM_data( SourceData )
+AllOutPut = LSTM_data( SourceData ) 
+comp_forcast( AllOutPut = AllOutPut , lstm = 'WeatherTransformer.keras' , regression_model = f'./model/WeatherRegression_{NowDateTime}' )
