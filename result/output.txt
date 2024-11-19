@@ -2824,3 +2824,99 @@ Epochs: 50
 
 總合計差距（從第二列開始）：3423067.6700000004
 
+Regression Type: Ridge
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：3189125.3200000003
+
+Regression Type: Ridge
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：4765054.06
+
+Regression Type: Lasso
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：3213090.73
+
+Regression Type: Lasso
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：3557045.16
+
+Regression Type: KnnRegression
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：4606495.49
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：4415563.72
+
+Regression Type: VotingRegressor
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：4472095.279999999
+
+Regression Type: Linear
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：5422925.609999999
+
+Regression Type: Linear
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：4932260.92
+
+Regression Type: RandomForestRegressor
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：3586018.119999999
+
+Regression Type: RandomForestRegressor
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：3561913.65
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：3341535.8600000003
+
+Regression Type: GradientBoostingRegressor
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：10197668.21
+
+Regression Type: SupportVectorRegressor
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：3501341.32
+
+Regression Type: SupportVectorRegressor
+Batch Size: 128
+Epochs: 300
+
+總合計差距（從第二列開始）：5400015.2700000005
+
+Regression Type: XGBoost
+Batch Size: 256
+Epochs: 300
+
+總合計差距（從第二列開始）：7071286.65
+
