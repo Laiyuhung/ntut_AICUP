@@ -65,7 +65,7 @@ def comp_forcast(AllOutPut , lstm , regression_model ):
 
     df = pd.DataFrame(predict_power, columns=['答案'])
     df.insert(0, '序號', ex_question )
-    df.to_csv('./result/conpetition_output.csv', index=False)
+    df.to_csv('./result/competition_output.csv', index=False)
     print('Output CSV File Saved')
 
 

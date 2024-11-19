@@ -34,6 +34,7 @@ from regression_models.ElasticnetRegression import *
 from regression_models.HuberRegression import *
 from regression_models.LassoRegression import *
 from regression_models.RidgeRegression import *
+from regression_models.combined_regression import *
 
 def main():
     start_time = time.time()
@@ -59,10 +60,10 @@ def main():
 
     # hopes
     running_type = "try 1st"
-    seq_type = ["Transformer", "GRU", "Bidirectional LSTM", "LSTM", "Simple RNN"]
+    seq_type = ["LSTM", "Transformer", "GRU", "Bidirectional LSTM", "Simple RNN"]
     # seq_type = ["GRU"]
-    reg_type = ["Lasso", "ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "Linear", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Ridge"]
-    # reg_type = ["Linear"]
+    reg_type = ["Lasso", "Linear", "ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Ridge"]
+    # reg_type = ["Lasso"]
     batch_size_option = [256, 128]
     epoch_option = [50, 100, 150, 200, 250, 300]
 
@@ -76,7 +77,7 @@ def main():
             elif sequential_type == "LSTM":
                 regressor = deep_lstm_model((X_train.shape[1], X_train.shape[2]))
             
-            if sequential_type == "GRU":
+            elif sequential_type == "GRU":
                 regressor = gru_model((X_train.shape[1], X_train.shape[2]))
             
             elif sequential_type == "Simple RNN":
@@ -149,6 +150,9 @@ def main():
 
                             elif regression_type == "GradientDescentRegression":
                                 gradient_descent_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
+
+                            elif regression_type == "combined":
+                                combined_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
 
                             if running_type != "competition":
