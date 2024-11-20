@@ -3142,3 +3142,9 @@ Epochs: 250
 
 總合計差距（從第二列開始）：3350589.61
 
+Regression Type: Linear
+Batch Size: 256
+Epochs: 225
+
+總合計差距（從第二列開始）：3446266.33
+
