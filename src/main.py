@@ -59,13 +59,13 @@ def main():
     # epoch_option = [50, 100, 150, 200, 250, 300]
 
     # hopes
-    running_type = "try again"
+    running_type = "competition"
     # seq_type = ["LSTM", "Transformer", "GRU", "Bidirectional LSTM", "Simple RNN"]
     seq_type = ["LSTM"]
     # reg_type = ["Lasso", "Linear", "ExtraTreesRegressor", "KnnRegression", "VotingRegressor", "RandomForestRegressor", "GradientBoostingRegressor", "SupportVectorRegressor", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Ridge"]
-    reg_type = ["Lasso"]
-    batch_size_option = [256]
-    epoch_option = [1500]
+    reg_type = ["RandomForestRegressor"]
+    batch_size_option = [128]
+    epoch_option = [1000]
 
     if running_type != "competition":
         # print("111")
