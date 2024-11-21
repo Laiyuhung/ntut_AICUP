@@ -1,16 +1,11 @@
-
 import os
 import numpy as np
 import pandas as pd
 from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 import joblib
-from datetime import datetime
 
-
-
-
-def comp_forcast(AllOutPut , lstm , regression_model ):
+def comp_forcast(AllOutPut , lstm , regression_model , k = 0):
     regressor = load_model( lstm )
     Regression = joblib.load( regression_model )
     regressor.compile(optimizer='adam', loss='mean_squared_error')
@@ -18,7 +13,7 @@ def comp_forcast(AllOutPut , lstm , regression_model ):
     LookBackNum = 12
     ForecastNum = 48
 
-    data_name = './data/ExampleTestData/upload(no answer).csv'
+    data_name = './data/ExampleTestData/upload(noanswer).csv'
     source_data = pd.read_csv(data_name, encoding='utf-8')
     target = ['序號']
     ex_question = source_data[target].values
@@ -65,8 +60,5 @@ def comp_forcast(AllOutPut , lstm , regression_model ):
 
     df = pd.DataFrame(predict_power, columns=['答案'])
     df.insert(0, '序號', ex_question )
-    df.to_csv('./result/competition_output.csv', index=False)
+    df.to_csv(f'./result/{k}_output.csv', index=False)
     print('Output CSV File Saved')
-
-
-

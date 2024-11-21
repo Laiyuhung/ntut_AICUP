@@ -1,11 +1,17 @@
 import joblib
-from sklearn.linear_model import ElasticNet, HuberRegressor, Lasso, Ridge
-from xgboost import XGBRegressor
 from catboost import CatBoostRegressor
-from lightgbm import LGBMRegressor
+import os
 
-def catboost_regression_modal(NowDateTime, AllOutPut, X_train, y_train):
+def catboost_regression_modal(NowDateTime, X_train, y_train):
+    # Initialize and train the CatBoost model
     model = CatBoostRegressor(iterations=100, learning_rate=0.1, depth=6, verbose=0)
     model.fit(X_train, y_train)
-    joblib.dump(model, f'./model/CatBoostRegression_{NowDateTime}.pkl')
-    print("CatBoost model saved!")
+    
+    # Ensure the 'models' directory exists
+    os.makedirs('./models', exist_ok=True)
+    
+    # Save the CatBoost model using joblib with a .joblib extension
+    model_filename = f'./models/CatBoostRegression.joblib'
+    joblib.dump(model, model_filename)
+    
+    print(f"CatBoost model saved.")

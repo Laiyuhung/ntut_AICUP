@@ -1,15 +1,29 @@
-from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
-from sklearn.svm import SVR
-from joblib import dump
+from sklearn.ensemble import RandomForestRegressor
+from datetime import datetime
+import joblib
+import numpy as np
+import pandas as pd
 import os
 
-def random_forest_regression_modal(timestamp, AllOutPut, X_train, y_train):
+def create_modal(Regression_X_train, Regression_y_train):
+    # Initialize and train the RandomForest model
+    RandomForestModel = RandomForestRegressor(n_estimators=100, random_state=42)
+    RandomForestModel.fit(Regression_X_train, Regression_y_train)
 
-    print("Training RandomForestRegressor...")
-    model = RandomForestRegressor(n_estimators=100, random_state=42)
-    model.fit(X_train, y_train)
+    return RandomForestModel
+
+def random_forest_regression_modal(NowDateTime, Regression_X_train, Regression_y_train):
+    # Create the RandomForest model
+    RegressionModel = create_modal(Regression_X_train, Regression_y_train)
     
-    model_filename = f'./models/RandomForestRegression_{timestamp}.joblib'
-    os.makedirs(os.path.dirname(model_filename), exist_ok=True)
-    dump(model, model_filename)
-    print(f"RandomForestRegressor model saved to {model_filename}")
+    # Ensure the 'models' directory exists
+    os.makedirs('./models', exist_ok=True)
+    
+    # Save the RandomForest model using joblib with a .joblib extension
+    model_path = f'./models/RandomForestRegression.joblib'
+    joblib.dump(RegressionModel, model_path)
+
+    print(f'Model Saved: {model_path}')
+    
+    # Output the R squared score
+    print('Random Forest R squared:', RegressionModel.score(Regression_X_train, Regression_y_train))

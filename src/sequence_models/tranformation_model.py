@@ -31,13 +31,13 @@ def transformer_model(input_shape):
 
     ffn_output = GlobalAveragePooling1D()(ffn_output)
     
-    outputs = Dense(5)(ffn_output)
+    outputs = Dense(10)(ffn_output)
     
     model = Model(inputs, outputs)
     model.compile(optimizer=Adam(learning_rate=0.001), loss="mean_squared_error")
     return model
 
-def train( X_train, y_train, epochs=100, batch_size=64 ):
+def transformer_train( X_train, y_train, epochs=100, batch_size=64 ):
     # ¶}©l°V½m
     regressor = transformer_model((X_train.shape[1], X_train.shape[2]))
     
@@ -45,5 +45,6 @@ def train( X_train, y_train, epochs=100, batch_size=64 ):
 
     # «O¦s¼Ò«¬
     NowDateTime = datetime.now().strftime("%Y-%m-%dT%H_%M_%SZ")
-    regressor.save('WeatherTransformer.keras')
-    print('Model Saved')
+    regressor.save('./model/Transformer.keras')
+    print("111")
+    print('Model Saved: Transformer.keras')

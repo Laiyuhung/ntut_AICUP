@@ -1,15 +1,27 @@
-from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.svm import SVR
-from joblib import dump
+from datetime import datetime
+import joblib
 import os
 
-def support_vector_regression_modal(timestamp, AllOutPut, X_train, y_train):
+def create_modal(Regression_X_train, Regression_y_train):
+    # Initialize and train the Support Vector Regressor (SVR) model
+    SVRModel = SVR(kernel='rbf', C=1.0, epsilon=0.1)
+    SVRModel.fit(Regression_X_train, Regression_y_train)
+
+    return SVRModel
+
+def support_vector_regression_modal(NowDateTime, Regression_X_train, Regression_y_train):
+    # Create the SVR model
+    RegressionModel = create_modal(Regression_X_train, Regression_y_train)
     
-    print("Training SupportVectorRegressor...")
-    model = SVR(kernel='rbf', C=1.0, epsilon=0.1)
-    model.fit(X_train, y_train)
+    # Ensure the 'models' directory exists
+    os.makedirs('./models', exist_ok=True)
     
-    model_filename = f'./models/SupportVectorRegression_{timestamp}.joblib'
-    os.makedirs(os.path.dirname(model_filename), exist_ok=True)
-    dump(model, model_filename)
-    print(f"SupportVectorRegressor model saved to {model_filename}")
+    # Save the SVR model using joblib with a .joblib extension
+    model_path = f'./models/SupportVectorRegression.joblib'
+    joblib.dump(RegressionModel, model_path)
+
+    print(f'Model Saved: {model_path}')
+    
+    # Output the R squared score
+    print('SVR R squared:', RegressionModel.score(Regression_X_train, Regression_y_train))

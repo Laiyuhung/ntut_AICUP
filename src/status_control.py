@@ -183,15 +183,3 @@ def minus_to_zero():
 #     print(arr_filtered)
 #     np.save('./result/progress_status.npy', arr_filtered)
 #     result_to_csv()
-
-def test():
-
-    # 讀取 CSV 文件
-    file_path = "./data/ExampleTrainData(AVG)/TotalCloudAmount/Hualian_TotalCloudAmount_combined.csv"  # 替換成你的文件路徑
-    data = pd.read_csv(file_path)
-
-    # 替換所有 "--" 為 "0.0"
-    data = data.replace("--", "0.0")
-
-    # 保存回 CSV
-    data.to_csv("./data/ExampleTrainData(AVG)/TotalCloudAmount/Hualian_TotalCloudAmount_combined.csv", index=False)

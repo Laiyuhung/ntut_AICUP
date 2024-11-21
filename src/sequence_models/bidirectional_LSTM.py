@@ -1,10 +1,45 @@
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Bidirectional
+import tensorflow as tf
+tf.get_logger().setLevel('ERROR')
+
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Dense, Dropout, Input, LSTM, Bidirectional, LayerNormalization, Add
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.layers import GlobalAveragePooling1D
+from datetime import datetime
+
+import numpy as np
+import pandas as pd
+import os
 
 def bidirectional_lstm_model(input_shape):
-    model = Sequential()
-    model.add(Bidirectional(LSTM(units=64, return_sequences=True), input_shape=input_shape))
-    model.add(Bidirectional(LSTM(units=32)))
-    model.add(Dense(units=1))  # 根據輸出調整單位數
-    model.compile(optimizer='adam', loss='mse')
+    inputs = Input(shape=input_shape)
+    
+    # Bidirectional LSTM layer for sequence processing
+    lstm_output = Bidirectional(LSTM(128, return_sequences=True))(inputs)
+    lstm_output = LayerNormalization(epsilon=1e-6)(lstm_output)
+
+    # Add another Bidirectional LSTM layer for more depth
+    lstm_output = Bidirectional(LSTM(64, return_sequences=True))(lstm_output)
+    lstm_output = LayerNormalization(epsilon=1e-6)(lstm_output)
+
+    # Global pooling layer to reduce dimensions
+    lstm_output = GlobalAveragePooling1D()(lstm_output)
+    
+    # Final dense layer for output
+    outputs = Dense(10)(lstm_output)
+    
+    model = Model(inputs, outputs)
+    model.compile(optimizer=Adam(learning_rate=0.001), loss="mean_squared_error")
     return model
+
+def bidirectional_lstm_train(X_train, y_train, epochs=100, batch_size=64):
+    # Initialize the Bidirectional LSTM model
+    regressor = bidirectional_lstm_model((X_train.shape[1], X_train.shape[2]))
+    
+    # Train the LSTM model
+    regressor.fit(X_train, y_train, epochs=epochs, batch_size=batch_size)
+
+    # Save the trained model
+    NowDateTime = datetime.now().strftime("%Y-%m-%dT%H_%M_%SZ")
+    regressor.save('./model/BidirectionalLSTM.keras')
+    print('Model Saved: BidirectionalLSTM.keras')

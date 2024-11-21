@@ -1,25 +1,60 @@
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Dropout
+from tensorflow.keras.layers import Dense, LSTM, Dropout
+from tensorflow.keras.optimizers import Adam
+import numpy as np
 
-def deep_lstm_model(input_shape):
+def create_lstm_model(input_shape):
+    """
+    Create an LSTM model
+    :param input_shape: Shape of the input data (time steps, number of features)
+    :return: Created LSTM model
+    """
     model = Sequential()
-    
-    # 第一層 LSTM
     model.add(LSTM(units=128, return_sequences=True, input_shape=input_shape))
-    model.add(Dropout(0.2))  # 加入 Dropout 層來避免過擬合
+    model.add(LSTM(units=64))
+    model.add(Dropout(0.2))  # Add Dropout to reduce overfitting
+    return model
 
-    # 第二層 LSTM
-    model.add(LSTM(units=64, return_sequences=True))
-    model.add(Dropout(0.2))
+def output_layer_setting(model, output_units):
+    """
+    Add the output layer and compile the model
+    :param model: Created LSTM model
+    :param output_units: Number of units in the output layer
+    :return: Compiled model
+    """
+    model.add(Dense(units=output_units))  # Output layer
+    model.compile(optimizer=Adam(learning_rate=0.001), loss='mean_squared_error')  # Compile the model
+    return model 
 
-    # 第三層 LSTM
-    model.add(LSTM(units=32))
-    model.add(Dropout(0.2))
+def LSTM_train(X_train, y_train, epochs, batch_size):
+    """
+    Train the LSTM model and save it
+    :param X_train: Training input data (samples, time steps, number of features)
+    :param y_train: Training target data (samples, output dimensions)
+    :param epochs: Number of training epochs
+    :param batch_size: Batch size
+    """
+    # Check if the input data shape is correct
+    input_shape = (X_train.shape[1], X_train.shape[2])
+    output_units = y_train.shape[1]  # Automatically set output dimensions based on y_train
 
-    # 最後的回歸層
-    model.add(Dense(units=1))  # 假設是回歸任務，輸出層單位數設為 1
+    # Create the model
+    model = create_lstm_model(input_shape)
+    model = output_layer_setting(model, output_units)
 
-    # 編譯模型
-    model.compile(optimizer='adam', loss='mse')  # 使用均方誤差（MSE）作為損失函數
+    # Train the model
+    model.fit(
+        X_train, y_train,
+        epochs=epochs,
+        batch_size=batch_size,
+        validation_split=0.2,  # Use 20% of the data as validation set
+        verbose=1,
+        shuffle=True
+    )
+
+    # Save the model in .keras format
+    model_path = f'./model/LSTM.keras'
+    model.save(model_path)
+    print(f'Model Saved: {model_path}')
 
     return model

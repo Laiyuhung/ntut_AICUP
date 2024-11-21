@@ -5,15 +5,22 @@ from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 import joblib
 
-def forcast(AllOutPut , lstm , regression_model ):
-    regressor = load_model( lstm )
-    Regression = joblib.load( regression_model )
-    regressor.compile(optimizer='adam', loss='mean_squared_error')
+def forcast(AllOutPut, lstm, regression_model, k=0):
+    # Initialize the MinMaxScaler with AllOutPut
     LSTM_MinMaxModel = MinMaxScaler().fit(AllOutPut)
+    
+    # Load the LSTM model (.h5 or .keras)
+    regressor = load_model(lstm)
+    
+    # Load the regression model
+    Regression = joblib.load(regression_model)
+    
+    # Parameters
     LookBackNum = 12
     ForecastNum = 48
-
-    data_name = './data/ExampleTestData/upload.csv'
+    
+    # Load input data
+    data_name = './data/ExampleTestData/upload(noanswer).csv'
     source_data = pd.read_csv(data_name, encoding='utf-8')
     target = ['序號']
     ex_question = source_data[target].values
@@ -22,6 +29,7 @@ def forcast(AllOutPut , lstm , regression_model ):
     predict_power = []
     count = 0
 
+    # Start forecasting
     while count < len(ex_question):
         print('count : ', count)
         LocationCode = int(ex_question[count])
@@ -29,11 +37,16 @@ def forcast(AllOutPut , lstm , regression_model ):
         if LocationCode < 10:
             strLocationCode = '0' + str(LocationCode)
 
-        DataName = './data/ExampleTrainData(IncompleteAVG)/IncompleteAvgDATA_' + strLocationCode + '.csv'
+        DataName = f'./data/ExampleTrainData(IncompleteAVG)/IncompleteAvgDATA_{strLocationCode}_modified3.csv'
         SourceData = pd.read_csv(DataName, encoding='utf-8')
+
+        # Use the extended fields
         ReferTitle = SourceData[['Serial']].values
-        ReferData = SourceData[['WindSpeed(m/s)', 'Pressure(hpa)', 'Temperature(°C)', 'Humidity(%)', 'Sunlight(Lux)']].values
-        
+        ReferData = SourceData[
+            ['WindSpeed(m/s)', 'Pressure(hpa)', 'Temperature(°C)', 'Humidity(%)', 'Sunlight(Lux)',
+             'Hour', 'Season_weight', 'Sunlight_time(h)', 'UV', 'Cloud']
+        ].values
+
         inputs = []
 
         for DaysCount in range(len(ReferTitle)):
@@ -44,21 +57,33 @@ def forcast(AllOutPut , lstm , regression_model ):
 
         for i in range(ForecastNum):
             if i > 0:
-                inputs.append(predict_output[i - 1].reshape(1, 5))
+                inputs.append(predict_output[i - 1].reshape(1, 10))  # Expand to 10 columns
 
             X_test = []
             X_test.append(inputs[0 + i:LookBackNum + i])
-            
-            NewTest = np.array(X_test)
-            NewTest = np.reshape(NewTest, (NewTest.shape[0], NewTest.shape[1], 5 ))
-            predicted = regressor.predict(NewTest)
-            predict_output.append(predicted)
-            predict_power.append(np.round(Regression.predict(predicted), 2).flatten())
-        
-        count += 48
-        
 
+            NewTest = np.array(X_test)
+            NewTest = np.reshape(NewTest, (NewTest.shape[0], NewTest.shape[1], 10))  # Adjust input dimension
+
+            # Predict using LSTM model
+            predicted = regressor.predict(NewTest)
+
+            # Ensure the shape is correct
+            if predicted.ndim == 1:
+                predicted = predicted.reshape(-1, 1)  # Reshape to (n_samples, 1)
+            if predicted.shape[1] != 10:
+                predicted = np.tile(predicted, (1, 10))  # Expand to 10 columns
+
+            predict_output.append(predicted)
+
+            # Further prediction using regression model
+            regression_prediction = Regression.predict(predicted)
+            predict_power.append(np.round(regression_prediction, 5).flatten())
+
+        count += 48
+
+    # Create DataFrame for results
     df = pd.DataFrame(predict_power, columns=['答案'])
-    df.insert(0, '序號', ex_question )
-    df.to_csv('./result/output.csv', index=False)
+    df.insert(0, '序號', ex_question)
+    df.to_csv(f'./result/{k}_output.csv', index=False)
     print('Output CSV File Saved')

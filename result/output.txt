@@ -2920,273 +2920,63 @@ Epochs: 300
 
 總合計差距（從第二列開始）：7071286.65
 
-Regression Type: 1233253354
-Batch Size: 256
-Epochs: 50
-
-總合計差距（從第二列開始）：3312495.82
-
-Regression Type: 1233253354
-Batch Size: 256
-Epochs: 50
-
-總合計差距（從第二列開始）：3312495.82
-
-Regression Type: 1233253354
-Batch Size: 256
-Epochs: 50
-
-總合計差距（從第二列開始）：3312495.82
-
-Regression Type: combined
-Batch Size: 128
-Epochs: 75
-
-總合計差距（從第二列開始）：3763040.0500000003
-
-Regression Type: combined
-Batch Size: 128
-Epochs: 120
-
-總合計差距（從第二列開始）：3386676.74
-
-Regression Type: Ridge
-Batch Size: 256
-Epochs: 300
-
-總合計差距（從第二列開始）：5425292.6899999995
-
-Regression Type: combined
-Batch Size: 64
-Epochs: 75
-
-總合計差距（從第二列開始）：3294427.1099999994
-
-Regression Type: XGBoost
-Batch Size: 64
-Epochs: 78
-
-總合計差距（從第二列開始）：3494590.29
-
-Regression Type: RandomForestRegressor
-Batch Size: 256
-Epochs: 60
-
-總合計差距（從第二列開始）：3363462.37
-
-Regression Type: Lasso
-Batch Size: 256
-Epochs: 50
-
-總合計差距（從第二列開始）：3448274.2
-
-Regression Type: Lasso
-Batch Size: 256
-Epochs: 100
-
-總合計差距（從第二列開始）：3306933.91
-
-Regression Type: Lasso
-Batch Size: 256
-Epochs: 150
-
-總合計差距（從第二列開始）：6236900.91
-
-Regression Type: Lasso
-Batch Size: 256
-Epochs: 200
-
-總合計差距（從第二列開始）：3176561.52
-
-Regression Type: Lasso
-Batch Size: 256
-Epochs: 250
-
-總合計差距（從第二列開始）：3716224.75
-
-Regression Type: Lasso
+Regression Type: VotingRegressor
 Batch Size: 128
 Epochs: 50
 
-總合計差距（從第二列開始）：3384241.3100000005
+總合計差距（從第二列開始）：4035486.54
 
-Regression Type: Lasso
+Regression Type: VotingRegressor
+Batch Size: 128
+Epochs: 50
+
+總合計差距（從第二列開始）：5631144.4399999995
+
+Regression Type: VotingRegressor
+Batch Size: 128
+Epochs: 1
+
+總合計差距（從第二列開始）：14546139.209999997
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 1
+
+總合計差距（從第二列開始）：14546139.209999997
+
+Regression Type: VotingRegressor
 Batch Size: 128
 Epochs: 100
 
-總合計差距（從第二列開始）：3956767.8800000004
+總合計差距（從第二列開始）：14546139.209999997
 
-Regression Type: combined
-Batch Size: 128
-Epochs: 200
-
-總合計差距（從第二列開始）：3386562.32
-
-Regression Type: combined
-Batch Size: 256
-Epochs: 1000
-
-總合計差距（從第二列開始）：3964176.76
-
-Regression Type: combined
-Batch Size: 256
-Epochs: 5000
-
-總合計差距（從第二列開始）：11295188.59
-
-Regression Type: combined
-Batch Size: 256
-Epochs: 3000
-
-總合計差距（從第二列開始）：4481280.37
-
-Regression Type: Lasso
-Batch Size: 256
-Epochs: 1000
-
-總合計差距（從第二列開始）：3425741.5700000003
-
-Regression Type: Lasso
-Batch Size: 256
-Epochs: 300
-
-總合計差距（從第二列開始）：3485080.9800000004
-
-Regression Type: Lasso
-Batch Size: 128
-Epochs: 150
-
-總合計差距（從第二列開始）：8447658.52
-
-Regression Type: Lasso
-Batch Size: 128
-Epochs: 200
-
-總合計差距（從第二列開始）：3833592.39
-
-Regression Type: Lasso
-Batch Size: 128
-Epochs: 250
-
-總合計差距（從第二列開始）：3533660.94
-
-Regression Type: Lasso
-Batch Size: 128
-Epochs: 300
-
-總合計差距（從第二列開始）：10452143.120000001
-
-Regression Type: Linear
-Batch Size: 256
-Epochs: 50
-
-總合計差距（從第二列開始）：3263476.83
-
-Regression Type: Linear
-Batch Size: 256
-Epochs: 100
-
-總合計差距（從第二列開始）：3277408.35
-
-Regression Type: Linear
-Batch Size: 256
-Epochs: 150
-
-總合計差距（從第二列開始）：3489160.5200000005
-
-Regression Type: Linear
-Batch Size: 256
-Epochs: 200
-
-總合計差距（從第二列開始）：3178137.81
-
-Regression Type: Linear
-Batch Size: 256
-Epochs: 250
-
-總合計差距（從第二列開始）：3320935.97
-
-Regression Type: Linear
-Batch Size: 256
-Epochs: 300
-
-總合計差距（從第二列開始）：3541715.6999999993
-
-Regression Type: Linear
-Batch Size: 128
-Epochs: 50
-
-總合計差距（從第二列開始）：3157710.34
-
-Regression Type: Linear
-Batch Size: 128
-Epochs: 100
-
-總合計差距（從第二列開始）：3934723.3699999996
-
-Regression Type: Linear
-Batch Size: 128
-Epochs: 150
-
-總合計差距（從第二列開始）：3317296.380000001
-
-Regression Type: Linear
-Batch Size: 128
-Epochs: 200
-
-總合計差距（從第二列開始）：9519850.469999999
-
-Regression Type: Linear
-Batch Size: 128
-Epochs: 250
-
-總合計差距（從第二列開始）：3350589.61
-
-Regression Type: Linear
-Batch Size: 256
-Epochs: 225
-
-總合計差距（從第二列開始）：3446266.33
-
-Regression Type: Lasso
-Batch Size: 256
-Epochs: 1500
-
-總合計差距（從第二列開始）：5012693.76
-
-Regression Type: Lasso
-Batch Size: 64
-Epochs: 50
-
-總合計差距（從第二列開始）：5020161.899999999
-
-Regression Type: Lasso
-Batch Size: 64
-Epochs: 100
-
-總合計差距（從第二列開始）：3500475.6799999997
-
-Regression Type: Lasso
-Batch Size: 64
-Epochs: 150
-
-總合計差距（從第二列開始）：6826778.590000001
-
-Regression Type: RandomForestRegressor
-Batch Size: 256
-Epochs: 50
-
-總合計差距（從第二列開始）：3434941.0300000003
-
-Regression Type: RandomForestRegressor
-Batch Size: 256
-Epochs: 600
-
-總合計差距（從第二列開始）：3641527.96
-
-Regression Type: RandomForestRegressor
+Regression Type: VotingRegressor
 Batch Size: 128
 Epochs: 1000
 
-總合計差距（從第二列開始）：3436114.3900000006
+總合計差距（從第二列開始）：14546139.209999997
+
+Regression Type: 
+Batch Size: 0
+Epochs: 0
+
+總合計差距（從第二列開始）：5736783.97
+
+Regression Type: VotingRegressor
+Batch Size: 128
+Epochs: 100
+
+總合計差距（從第二列開始）：5736783.97
+
+Regression Type: VotingRegressor
+Batch Size: 256
+Epochs: 200
+
+總合計差距（從第二列開始）：5736783.97
+
+Regression Type: 
+Batch Size: 0
+Epochs: 0
+
+總合計差距（從第二列開始）：5394309.88
 
