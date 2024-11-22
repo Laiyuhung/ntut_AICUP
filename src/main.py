@@ -52,17 +52,22 @@ def main():
 
     # orgiginal
     # seq_type = ["Transformer", "LSTM", "GRU", "SimpleRNN", "BidirectionalLSTM"]
-    # reg_type = ["ExtraTree", "KNNRegression", "Voting", "Linear", "RandomForest", "GradientBoosting", "SupportVector", "GradientDescent", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
+    # reg_type = ["ExtraTree", "KNN", "Voting", "Linear", "RandomForest", "GradientBoosting", "SupportVector", "GradientDescent", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
     # batch_size_option = [256, 128, 64]
     # epoch_option = [50, 100, 150, 200, 250, 300]
 
     # hopes
     seq_type = ["LSTM", "Transformer", "SimpleRNN","GRU",  "BidirectionalLSTM"]
-    reg_type = ["ExtraTree", "KNNRegression", "Voting", "Linear", "RandomForest", "GradientBoosting", "SupportVector", "XGBoost", "CatBoost", "LightGBM", "ElasticNet"]
+    reg_type = ["KNN", "Voting", "Linear", "RandomForest", "GradientBoosting", "SupportVector", "XGBoost", "CatBoost", "LightGBM", "ElasticNet"]
     batch_size_option = [256, 128]
     epoch_option = [50, 100, 150, 200, 250, 300]
+    start_k = 23
+    # seq_type = ["Transformer"]
+    # reg_type = ["Linear", "GradientBoosting"]
+    # batch_size_option = [256]
+    # epoch_option = [100, 150]
 
-    start_k = 15
+    
 
     for sequencial in seq_type:
         for regression in reg_type:
