@@ -21,7 +21,7 @@ def knn_regression_modal(NowDateTime, LSTM_MinMaxModel, AllOutPut, Regression_X_
     os.makedirs('./models', exist_ok=True)
     
     # Save the KNN model using joblib with a .joblib extension
-    model_path = f'./models/KNNRegressionRegression.joblib'
+    model_path = f'./models/KNNRegression.joblib'
     joblib.dump(RegressionModel, model_path)
 
     print(f'Model Saved: {model_path}')
