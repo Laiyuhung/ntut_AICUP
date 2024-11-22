@@ -5,7 +5,7 @@ from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 import joblib
 
-def forcast(AllOutPut, lstm, regression_model, k=0):
+def forcast(AllOutPut, lstm, regression_model, k=0, sequencial="test", regression="test", batch=128, epoch=100):
     # Initialize the MinMaxScaler with AllOutPut
     LSTM_MinMaxModel = MinMaxScaler().fit(AllOutPut)
     
@@ -85,5 +85,5 @@ def forcast(AllOutPut, lstm, regression_model, k=0):
     # Create DataFrame for results
     df = pd.DataFrame(predict_power, columns=['答案'])
     df.insert(0, '序號', ex_question)
-    df.to_csv(f'./result/{k}_output.csv', index=False)
+    df.to_csv(f'./result/{k}_output_{sequencial}_{regression}_{batch}_{epoch}.csv', index=False)
     print('Output CSV File Saved')

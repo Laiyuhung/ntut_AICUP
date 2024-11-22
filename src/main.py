@@ -52,17 +52,17 @@ def main():
 
     # orgiginal
     # seq_type = ["Transformer", "LSTM", "GRU", "SimpleRNN", "BidirectionalLSTM"]
-    # reg_type = ["ExtraTree", "KNNRegression", "VotingRegressor", "Linear", "RandomForest", "GradientBoosting", "SupportVector", "GradientDescent", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
+    # reg_type = ["ExtraTree", "KNNRegression", "Voting", "Linear", "RandomForest", "GradientBoosting", "SupportVector", "GradientDescent", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "Huber", "Lasso", "Ridge"]
     # batch_size_option = [256, 128, 64]
     # epoch_option = [50, 100, 150, 200, 250, 300]
 
     # hopes
-    seq_type = ["GRU", "Transformer", "LSTM", "SimpleRNN", "BidirectionalLSTM"]
-    reg_type = ["ExtraTree", "KNN", "Linear", "RandomForest", "GradientBoosting", "SupportVector", "GradientDescent", "XGBoost", "CatBoost", "LightGBM", "ElasticNet"]
-    batch_size_option = [256, 128, 64]
+    seq_type = ["LSTM", "Transformer", "SimpleRNN","GRU",  "BidirectionalLSTM"]
+    reg_type = ["ExtraTree", "KNNRegression", "Voting", "Linear", "RandomForest", "GradientBoosting", "SupportVector", "XGBoost", "CatBoost", "LightGBM", "ElasticNet"]
+    batch_size_option = [256, 128]
     epoch_option = [50, 100, 150, 200, 250, 300]
 
-    start_k = 1
+    start_k = 15
 
     for sequencial in seq_type:
         for regression in reg_type:
@@ -70,8 +70,8 @@ def main():
                 for epoch in epoch_option:
 
                     print("---now progressing---")
-                    print("Sequencial model type: ", seq_type)
-                    print("Regression type: ", reg_type)
+                    print("Sequencial model type: ", sequencial)
+                    print("Regression type: ", regression)
                     print("Batch size: ", batch)
                     print("Epochs: ", epoch)
                     print()
@@ -136,7 +136,7 @@ def main():
                     # elif regression == "Ridge":
                     #     ridge_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
-                    # elif regression == "GradientDescentRegression":
+                    # elif regression == "GradientDescent":
                     #     gradient_descent_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
 
                     lstm_model_name = sequencial
@@ -144,7 +144,7 @@ def main():
                     print("lstm_model: ",lstm_model_name)
                     print("regression_model: ",regression_model_name)
                     print("file No. : ",start_k)
-                    forcast( AllOutPut = AllOutPut , lstm = f'./model/{lstm_model_name}.keras' , regression_model = f'./models/{regression_model_name}Regression.joblib', k=start_k )
+                    forcast( AllOutPut = AllOutPut , lstm = f'./model/{lstm_model_name}.keras' , regression_model = f'./models/{regression_model_name}Regression.joblib', k=start_k, sequencial=sequencial, regression=regression, batch=batch, epoch=epoch )
                     start_k = start_k+1
 
     end_time = time.time() 
