@@ -57,11 +57,11 @@ def main():
     # epoch_option = [50, 100, 150, 200, 250, 300]
 
     # hopes
-    seq_type = ["LSTM", "Transformer", "SimpleRNN","GRU",  "BidirectionalLSTM"]
-    reg_type = ["RandomForest", "GradientBoosting", "SupportVector", "XGBoost", "CatBoost", "LightGBM", "ElasticNet"]
+    seq_type = ["Transformer", "SimpleRNN", "GRU", "BidirectionalLSTM", "LSTM"]
+    reg_type = ["Voting", "Linear", "GradientBoosting", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "ExtraTree", "KNN", "SupportVector", "RandomForest" ]
     batch_size_option = [256, 128]
     epoch_option = [50, 100, 150, 200, 250, 300]
-    start_k = 60
+    start_k = 63
     # seq_type = ["Transformer"]
     # reg_type = ["Linear", "GradientBoosting"]
     # batch_size_option = [256]
@@ -105,8 +105,8 @@ def main():
                     elif regression == "KNN":
                         knn_regression_modal( NowDateTime , LSTM_MinMaxModel, AllOutPut , Regression_X_train , Regression_y_train )
                     
-                    # elif reg_type == "Voting":
-                    #     voting_regression_modal( NowDateTime , AllOutPut , Regression_X_train , Regression_y_train )
+                    elif regression == "Voting":
+                        voting_regression_modal( NowDateTime , AllOutPut , Regression_X_train , Regression_y_train )
 
                     elif regression == "Linear":
                         linear_regression_modal( NowDateTime , AllOutPut , Regression_X_train , Regression_y_train )

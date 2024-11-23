@@ -67,8 +67,8 @@ def voting_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regressi
 
     # 保存模型和归一化器
     os.makedirs('./model', exist_ok=True)
-    joblib.dump(RegressionModel, f'Regression_{NowDateTime}.pkl')
-    joblib.dump(LSTM_MinMaxModel, './model/LSTM_MinMaxModel.pkl')
+    joblib.dump(RegressionModel, f'./models/VotingRegression.joblib')
+    joblib.dump(LSTM_MinMaxModel, './models/LSTM_MinMaxModel.joblib')
 
     # 打印模型分数
     print('Voting Regressor Model R squared: ',
