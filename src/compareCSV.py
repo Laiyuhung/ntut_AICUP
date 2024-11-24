@@ -27,10 +27,11 @@ def compare_csv(compare_name, best_name):
         with open('./result/ResultComparison.csv', 'a', newline='', encoding='utf-8') as out_csv:
             writer = csv.writer(out_csv)
             # writer.writerow(["compare_file", "best_file", "total_difference"])
-            writer.writerow([file1, file2, sum])
+            diff_with_answers=""
+            writer.writerow([file1, file2, sum, diff_with_answers])
 
 # 使用範例
 
-compare_name = "65_output_Transformer_Voting_256_150"
+compare_name = "89_output_Transformer_GradientBoosting_256_50"
 best_name = "best"
 compare_csv(compare_name, best_name)

@@ -57,11 +57,11 @@ def main():
     # epoch_option = [50, 100, 150, 200, 250, 300]
 
     # hopes
-    seq_type = ["Transformer", "SimpleRNN", "GRU", "BidirectionalLSTM", "LSTM"]
-    reg_type = ["Voting", "Linear", "GradientBoosting", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "ExtraTree", "KNN", "SupportVector", "RandomForest" ]
+    seq_type = ["Transformer"]
+    reg_type = ["GradientBoosting", "XGBoost", "CatBoost", "LightGBM", "ElasticNet", "ExtraTree", "KNN", "SupportVector", "RandomForest" ]
     batch_size_option = [256, 128]
     epoch_option = [50, 100, 150, 200, 250, 300]
-    start_k = 63
+    start_k = 89
     # seq_type = ["Transformer"]
     # reg_type = ["Linear", "GradientBoosting"]
     # batch_size_option = [256]
