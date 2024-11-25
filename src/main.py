@@ -16,7 +16,7 @@ from sequence_models.LSTM_model import *
 from sequence_models.gru_model import *
 from sequence_models.simple_rnn_model import *
 from sequence_models.bidirectional_LSTM import *
-# from sequence_models.gru_tran import *
+from sequence_models.martin import *
 
 sys.path.append('/regression_models/')
 from regression_models.Linear import *
@@ -31,6 +31,7 @@ from regression_models.XgboostRegression import *
 from regression_models.CatboostRegression import *
 from regression_models.LightgbmRegression import *
 from regression_models.ElasticnetRegression import *
+from regression_models.martinRegression import *
 # from regression_models.HuberRegression import *
 # from regression_models.LassoRegression import *
 # from regression_models.RidgeRegression import *
@@ -57,8 +58,8 @@ def main():
     # epoch_option = [50, 100, 150, 200, 250, 300]
 
     # hopes
-    seq_type = ["BidirectionalLSTM"]
-    reg_type = ["ExtraTree", "KNN",  "XGBoost", "CatBoost", "LightGBM", "ElasticNet" ]
+    seq_type = ["Combined"]
+    reg_type = ["Combined"]
     batch_size_option = [256]
     epoch_option = [50, 100, 150, 200, 250]
     start_k = 111
@@ -96,6 +97,9 @@ def main():
                     elif sequencial == "BidirectionalLSTM":
                         bidirectional_lstm_train(X_train, y_train, epoch, batch)
 
+                    elif sequencial == "Combined":
+                        combined_train(X_train, y_train, epoch, batch)
+
 
 
                     Regression_y_train = Regression_y_train.ravel()
@@ -131,6 +135,9 @@ def main():
 
                     elif regression == "ElasticNet":
                         elasticnet_regression_modal(NowDateTime, Regression_X_train, Regression_y_train)
+
+                    elif regression == "Combined":
+                        combined_regression_modal( NowDateTime , AllOutPut , Regression_X_train , Regression_y_train )
 
                     # elif regression == "Huber":
                     #     huber_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regression_y_train)
