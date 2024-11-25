@@ -83,7 +83,7 @@ def combined_regression_modal(NowDateTime, AllOutPut, Regression_X_train, Regres
     :param Regression_y_train: 训练数据的目标值
     """
     # 检查输入特征是否为 10
-    if Regression_X_train.shape[1] != 3:
+    if Regression_X_train.shape[1] != 10:
         raise ValueError("输入特征数量必须为 10，请检查数据的形状！")
 
     # 创建并训练模型

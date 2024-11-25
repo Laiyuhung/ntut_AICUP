@@ -24,7 +24,7 @@ def create_lstm_cnn_transformer_model(X_train):
 
     # 输出层
     output = Flatten()(transformer_layer)
-    output = Dense(units=3)(output)  # 输出 3 个预测值（对应特征）
+    output = Dense(units=10)(output)  # 输出 3 个预测值（对应特征）
     
     # 构建模型
     model = Model(inputs=input_layer, outputs=output)
@@ -36,7 +36,7 @@ def output_layer_setting(regressor):
     return regressor
 
 # 训练模型
-def combined_train(X_train, y_train, NowDateTime, epochs, batch_size):
+def combined_train(X_train, y_train,  epochs, batch_size):
     regressor = create_lstm_cnn_transformer_model(X_train)
     regressor = output_layer_setting(regressor)
     regressor.fit(X_train, y_train, epochs=epochs, batch_size=batch_size)

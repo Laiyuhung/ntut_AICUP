@@ -60,9 +60,9 @@ def main():
     # hopes
     seq_type = ["Combined"]
     reg_type = ["Combined"]
-    batch_size_option = [256]
+    batch_size_option = [128]
     epoch_option = [50, 100, 150, 200, 250]
-    start_k = 111
+    start_k = 135
     # seq_type = ["Transformer"]
     # reg_type = ["Linear", "GradientBoosting"]
     # batch_size_option = [256]
