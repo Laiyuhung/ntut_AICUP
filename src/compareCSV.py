@@ -32,6 +32,6 @@ def compare_csv(compare_name, best_name):
 
 # 使用範例
 
-compare_name = "89_output_Transformer_GradientBoosting_256_50"
+compare_name = "99_output_Transformer_GradientBoosting_128_250"
 best_name = "best"
 compare_csv(compare_name, best_name)
