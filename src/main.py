@@ -58,10 +58,10 @@ def main():
     # epoch_option = [50, 100, 150, 200, 250, 300]
 
     # hopes
-    seq_type = ["Combined"]
-    reg_type = ["Combined"]
+    seq_type = ["Combined", "LSTM"]
+    reg_type = ["KNN", "Voting", "Linear", "CatBoost", "LightGBM", "ElasticNet"]
     batch_size_option = [256]
-    epoch_option = [1000]
+    epoch_option = [100, 200]
     start_k = 166
     # seq_type = ["Transformer"]
     # reg_type = ["Linear", "GradientBoosting"]
